@@ -48,6 +48,7 @@
             this.btnCE = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // txtValue
@@ -323,12 +324,21 @@
             this.lblPreviousValue.TabIndex = 18;
             this.lblPreviousValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(233)))), ((int)(((byte)(218)))));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(502, 38);
+            this.panel1.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(501, 523);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPreviousValue);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnCE);
@@ -378,6 +388,7 @@
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Label lblPreviousValue;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
