@@ -1,6 +1,8 @@
-﻿using System;
+﻿#region | Using |
+using System;
 using System.Globalization;
 using System.Windows.Forms;
+#endregion
 
 namespace Calculadora
 {
@@ -10,12 +12,17 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        #region | Variables |
+
         decimal firstValue = 0;
         decimal total = 0;
         string records = string.Empty;
         string operation = string.Empty;
-        
 
+        #endregion
+
+        #region | Controls event |
         private void btnZero_Click(object sender, EventArgs e)
         {
             txtValue.Text += "0";
@@ -76,7 +83,7 @@ namespace Calculadora
             operation = "+";
             firstValue = Convert.ToDecimal(txtValue.Text);
             PreviousValue(firstValue);
-            
+
         }
 
         private void btnSubtraction_Click(object sender, EventArgs e)
@@ -100,6 +107,11 @@ namespace Calculadora
             PreviousValue(firstValue);
         }
 
+        private void btnNegative_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnResult_Click(object sender, EventArgs e)
         {
             Calculate();
@@ -115,7 +127,13 @@ namespace Calculadora
         {
             txtValue.Text = string.Empty;
         }
+        private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validation(sender, e);
+        }
+        #endregion
 
+        #region | Functions |
         private void PreviousValue(decimal firstValue)
         {
             records = firstValue.ToString() + " " + operation + " ";
@@ -131,7 +149,7 @@ namespace Calculadora
                 total = Sum(firstValue, Convert.ToDecimal(txtValue.Text));
                 txtValue.Text = total.ToString();
             }
-            else if(operation == "-")
+            else if (operation == "-")
             {
                 total = Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
                 txtValue.Text = total.ToString();
@@ -149,26 +167,74 @@ namespace Calculadora
 
         }
 
-        private decimal Sum (decimal firstValue, decimal secondValue)
+        private decimal Sum(decimal firstValue, decimal secondValue)
         {
             decimal total = firstValue + secondValue;
             return total;
         }
+
         private decimal Subtraction(decimal firstValue, decimal secondValue)
         {
             decimal total = firstValue - secondValue;
             return total;
         }
+
         private decimal Multiplication(decimal firstValue, decimal secondValue)
         {
             decimal total = firstValue * secondValue;
             return total;
         }
+
         private decimal Division(decimal firstValue, decimal secondValue)
         {
             decimal total = firstValue / secondValue;
             return total;
         }
 
+        private void Validation(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            if (e.KeyChar == '+')
+            {
+                operation = "+";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+                Sum(firstValue, Convert.ToDecimal(txtValue.Text));
+            }
+            if (e.KeyChar == '-')
+            {
+                operation = "-";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+                Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
+            }
+            if (e.KeyChar == '/')
+            {
+                operation = "/";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+                Division(firstValue, Convert.ToDecimal(txtValue.Text));
+            }
+            if (e.KeyChar == '*')
+            {
+                operation = "*";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+                Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
+            }
+            if (e.KeyChar == 13)
+            {
+                Calculate();
+            }
+
+        }
+        #endregion
     }
 }

@@ -49,6 +49,7 @@
             this.btnEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNegative = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtValue
@@ -56,11 +57,12 @@
             this.txtValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValue.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtValue.Location = new System.Drawing.Point(33, 77);
+            this.txtValue.Location = new System.Drawing.Point(25, 77);
             this.txtValue.Name = "txtValue";
             this.txtValue.Size = new System.Drawing.Size(456, 34);
             this.txtValue.TabIndex = 0;
             this.txtValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValue_KeyPress);
             // 
             // btnSeven
             // 
@@ -307,9 +309,9 @@
             this.btnEqual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEqual.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(25, 421);
+            this.btnEqual.Location = new System.Drawing.Point(133, 421);
             this.btnEqual.Name = "btnEqual";
-            this.btnEqual.Size = new System.Drawing.Size(318, 68);
+            this.btnEqual.Size = new System.Drawing.Size(210, 68);
             this.btnEqual.TabIndex = 17;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
@@ -332,12 +334,27 @@
             this.panel1.Size = new System.Drawing.Size(502, 38);
             this.panel1.TabIndex = 19;
             // 
+            // btnNegative
+            // 
+            this.btnNegative.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnNegative.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnNegative.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNegative.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNegative.Location = new System.Drawing.Point(25, 421);
+            this.btnNegative.Name = "btnNegative";
+            this.btnNegative.Size = new System.Drawing.Size(102, 66);
+            this.btnNegative.TabIndex = 20;
+            this.btnNegative.Text = "+/-";
+            this.btnNegative.UseVisualStyleBackColor = true;
+            this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(501, 523);
+            this.Controls.Add(this.btnNegative);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblPreviousValue);
             this.Controls.Add(this.btnEqual);
@@ -389,6 +406,7 @@
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Label lblPreviousValue;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnNegative;
     }
 }
 
