@@ -1,14 +1,15 @@
 ﻿#region | Using |
 using System;
+using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 #endregion
 
 namespace Calculadora
 {
-    public partial class Form1 : Form
+    public partial class frmCalc : Form
     {
-        public Form1()
+        public frmCalc()
         {
             InitializeComponent();
         }
@@ -19,6 +20,8 @@ namespace Calculadora
         decimal total = 0;
         string records = string.Empty;
         string operation = string.Empty;
+        bool mouseClicked;
+        Point clickedAt;
 
         #endregion
 
@@ -105,11 +108,6 @@ namespace Calculadora
             operation = "/";
             firstValue = Convert.ToDecimal(txtValue.Text);
             PreviousValue(firstValue);
-        }
-
-        private void btnNegative_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnResult_Click(object sender, EventArgs e)
@@ -236,5 +234,27 @@ namespace Calculadora
 
         }
         #endregion
+
+        private void panelBorderForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseClicked)
+            {
+                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
+            }
+        }
+
+        private void panelBorderForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+
+            mouseClicked = true;
+            clickedAt = e.Location;
+        }
+
+        private void panelBorderForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseClicked = false;
+        }
     }
 }
