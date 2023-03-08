@@ -354,6 +354,7 @@
             this.btnNegative.TabIndex = 20;
             this.btnNegative.Text = "+/-";
             this.btnNegative.UseVisualStyleBackColor = true;
+            this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
             // 
             // tabControl1
             // 

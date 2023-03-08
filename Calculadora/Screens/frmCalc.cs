@@ -14,6 +14,8 @@ namespace Calculadora
             InitializeComponent();
         }
 
+        Database.CalculadoraDatabase db = new Database.CalculadoraDatabase();
+
         #region | Variables |
 
         decimal firstValue = 0;
@@ -168,27 +170,8 @@ namespace Calculadora
         {
             lblPreviousValue.Text = records + txtValue.Text + " =";
 
-            if (operation == "+")
-            {
-                total = Sum(firstValue, Convert.ToDecimal(txtValue.Text));
-                txtValue.Text = total.ToString();
-            }
-            else if (operation == "-")
-            {
-                total = Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
-                txtValue.Text = total.ToString();
-            }
-            else if (operation == "*")
-            {
-                total = Multiplication(firstValue, Convert.ToDecimal(txtValue.Text));
-                txtValue.Text = total.ToString();
-            }
-            else if (operation == "/")
-            {
-                total = Division(firstValue, Convert.ToDecimal(txtValue.Text));
-                txtValue.Text = total.ToString();
-            }
-
+            total = db.Calculate(firstValue, Convert.ToDecimal(txtValue.Text), operation);
+            txtValue.Text = total.ToString();
         }
 
         private decimal Sum(decimal firstValue, decimal secondValue)
@@ -261,5 +244,13 @@ namespace Calculadora
         }
         #endregion
 
+        private void btnNegative_Click(object sender, EventArgs e)
+        {
+            decimal valueTb = Convert.ToDecimal(txtValue.Text);
+
+            decimal result = valueTb - (valueTb * 2);
+
+            txtValue.Text = result.ToString();
+        }
     }
 }
