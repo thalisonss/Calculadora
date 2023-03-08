@@ -38,5 +38,12 @@ namespace Calculadora.Database
             }
 
         }
+
+        public string PutNegativeValuePositive(decimal value)
+        {
+            decimal result = value - (value * 2);
+
+            return result.ToString();
+        }
     }
 }

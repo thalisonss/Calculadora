@@ -138,24 +138,33 @@ namespace Calculadora
             PreviousValue(firstValue);
         }
 
+        private void btnNegative_Click(object sender, EventArgs e)
+        {
+            txtValue.Text = db.PutNegativeValuePositive(Convert.ToDecimal(txtValue.Text));
+        }
+
         private void btnResult_Click(object sender, EventArgs e)
         {
             Calculate();
-
         }
 
+        //Botões de limpar
         private void btnC_Click(object sender, EventArgs e)
         {
+            firstValue = 0;
+            lblPreviousValue.Text = string.Empty;
             txtValue.Text = string.Empty;
+            
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
             txtValue.Text = string.Empty;
         }
+
         private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validation(sender, e);
+            KeyBoardValidation(sender, e);
         }
         #endregion
 
@@ -174,31 +183,7 @@ namespace Calculadora
             txtValue.Text = total.ToString();
         }
 
-        private decimal Sum(decimal firstValue, decimal secondValue)
-        {
-            decimal total = firstValue + secondValue;
-            return total;
-        }
-
-        private decimal Subtraction(decimal firstValue, decimal secondValue)
-        {
-            decimal total = firstValue - secondValue;
-            return total;
-        }
-
-        private decimal Multiplication(decimal firstValue, decimal secondValue)
-        {
-            decimal total = firstValue * secondValue;
-            return total;
-        }
-
-        private decimal Division(decimal firstValue, decimal secondValue)
-        {
-            decimal total = firstValue / secondValue;
-            return total;
-        }
-
-        private void Validation(object sender, KeyPressEventArgs e)
+        private void KeyBoardValidation(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
             {
@@ -212,29 +197,25 @@ namespace Calculadora
             {
                 operation = "+";
                 firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);
-                Sum(firstValue, Convert.ToDecimal(txtValue.Text));
+                PreviousValue(firstValue);            
             }
             if (e.KeyChar == '-')
             {
                 operation = "-";
                 firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);
-                Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
+                PreviousValue(firstValue);              
             }
             if (e.KeyChar == '/')
             {
                 operation = "/";
                 firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);
-                Division(firstValue, Convert.ToDecimal(txtValue.Text));
+                PreviousValue(firstValue);               
             }
             if (e.KeyChar == '*')
             {
                 operation = "*";
                 firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);
-                Subtraction(firstValue, Convert.ToDecimal(txtValue.Text));
+                PreviousValue(firstValue);               
             }
             if (e.KeyChar == 13)
             {
@@ -243,14 +224,5 @@ namespace Calculadora
 
         }
         #endregion
-
-        private void btnNegative_Click(object sender, EventArgs e)
-        {
-            decimal valueTb = Convert.ToDecimal(txtValue.Text);
-
-            decimal result = valueTb - (valueTb * 2);
-
-            txtValue.Text = result.ToString();
-        }
     }
 }
