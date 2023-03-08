@@ -26,6 +26,31 @@ namespace Calculadora
         #endregion
 
         #region | Controls event |
+
+        //Mover form com mouse
+        private void panelBorderForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseClicked)
+            {
+                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
+            }
+        }
+
+        private void panelBorderForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+
+            mouseClicked = true;
+            clickedAt = e.Location;
+        }
+
+        private void panelBorderForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseClicked = false;
+        }
+
+        //Botões da calculadora adiciona numero no TextBox
         private void btnZero_Click(object sender, EventArgs e)
         {
             txtValue.Text += "0";
@@ -81,6 +106,7 @@ namespace Calculadora
             txtValue.Text += ",";
         }
 
+        //Botões de operações
         private void btnSum_Click(object sender, EventArgs e)
         {
             operation = "+";
@@ -235,26 +261,5 @@ namespace Calculadora
         }
         #endregion
 
-        private void panelBorderForm_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mouseClicked)
-            {
-                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
-            }
-        }
-
-        private void panelBorderForm_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button != MouseButtons.Left)
-                return;
-
-            mouseClicked = true;
-            clickedAt = e.Location;
-        }
-
-        private void panelBorderForm_MouseUp(object sender, MouseEventArgs e)
-        {
-            mouseClicked = false;
-        }
     }
 }
