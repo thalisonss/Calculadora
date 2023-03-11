@@ -49,16 +49,16 @@
             this.btnEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
             this.panelBorderForm = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnNegative = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBorderForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Calculadora.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtValue
@@ -338,7 +338,7 @@
             // panelBorderForm
             // 
             this.panelBorderForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(233)))), ((int)(((byte)(218)))));
-            this.panelBorderForm.Controls.Add(this.pictureBox1);
+            this.panelBorderForm.Controls.Add(this.btnExit);
             this.panelBorderForm.Location = new System.Drawing.Point(0, 0);
             this.panelBorderForm.Name = "panelBorderForm";
             this.panelBorderForm.Size = new System.Drawing.Size(492, 38);
@@ -346,6 +346,18 @@
             this.panelBorderForm.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseDown);
             this.panelBorderForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseMove);
             this.panelBorderForm.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseUp);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Image = global::Calculadora.Properties.Resources.button_exit;
+            this.btnExit.Location = new System.Drawing.Point(434, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(58, 38);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnNegative
             // 
@@ -420,16 +432,6 @@
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Calculadora.Properties.Resources.button_exit;
-            this.pictureBox1.Location = new System.Drawing.Point(434, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,10 +444,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalc";
             this.panelBorderForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.Calculadora.ResumeLayout(false);
             this.Calculadora.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,7 +480,7 @@
         private System.Windows.Forms.TabPage Calculadora;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnExit;
     }
 }
 

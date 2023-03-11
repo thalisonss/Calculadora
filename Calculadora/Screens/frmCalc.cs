@@ -55,116 +55,272 @@ namespace Calculadora
         //Botões da calculadora adiciona numero no TextBox
         private void btnZero_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "0";
+            try
+            {
+                txtValue.Text += "0";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnOne_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "1";
+            try
+            {
+                txtValue.Text += "1";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "2";
+            try
+            {
+                txtValue.Text += "2";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnThree_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "3";
+            try
+            {
+                txtValue.Text += "3";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnFour_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "4";
+            try
+            {
+                txtValue.Text += "4";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+           
         }
 
         private void btnFive_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "5";
+            try
+            {
+                txtValue.Text += "5";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+            
         }
 
         private void btnSix_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "6";
+            try
+            {
+                txtValue.Text += "6";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+            
         }
 
         private void btnSeven_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "7";
+            try
+            {
+                txtValue.Text += "7";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+
         }
 
         private void btnEight_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "8";
+            try
+            {
+                txtValue.Text += "8";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnNine_Click(object sender, EventArgs e)
         {
-            txtValue.Text += "9";
+            try
+            {
+                txtValue.Text += "9";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnDot_Click(object sender, EventArgs e)
         {
-            txtValue.Text += ",";
+            try
+            {
+                txtValue.Text += ",";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         //Botões de operações
         private void btnSum_Click(object sender, EventArgs e)
         {
-            operation = "+";
-            firstValue = Convert.ToDecimal(txtValue.Text);
-            PreviousValue(firstValue);
-
+            try
+            {
+                operation = "+";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnSubtraction_Click(object sender, EventArgs e)
         {
-            operation = "-";
-            firstValue = Convert.ToDecimal(txtValue.Text);
-            PreviousValue(firstValue);
+            try
+            {
+                operation = "-";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            operation = "*";
-            firstValue = Convert.ToDecimal(txtValue.Text);
-            PreviousValue(firstValue);
+            try
+            {
+                operation = "*";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            operation = "/";
-            firstValue = Convert.ToDecimal(txtValue.Text);
-            PreviousValue(firstValue);
+            try
+            {
+                operation = "/";
+                firstValue = Convert.ToDecimal(txtValue.Text);
+                PreviousValue(firstValue);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+
         }
 
         private void btnNegative_Click(object sender, EventArgs e)
         {
-            txtValue.Text = db.PutNegativeValuePositive(Convert.ToDecimal(txtValue.Text));
+            try
+            {
+                txtValue.Text = db.PutNegativeValuePositive(Convert.ToDecimal(txtValue.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            Calculate();
+            try
+            {
+                Calculate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+            
         }
 
         //Botões de limpar
         private void btnC_Click(object sender, EventArgs e)
         {
-            firstValue = 0;
-            lblPreviousValue.Text = string.Empty;
-            txtValue.Text = string.Empty;
-            
+            try
+            {
+                firstValue = 0;
+                lblPreviousValue.Text = string.Empty;
+                txtValue.Text = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }       
         }
 
         private void btnCE_Click(object sender, EventArgs e)
         {
-            txtValue.Text = string.Empty;
+            try
+            {
+                txtValue.Text = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
 
         private void txtValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            KeyBoardValidation(sender, e);
+            try
+            {
+                KeyBoardValidation(sender, e);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
         }
         #endregion
 
@@ -185,43 +341,49 @@ namespace Calculadora
 
         private void KeyBoardValidation(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            try
             {
-                e.Handled = true;
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+                {
+                    e.Handled = true;
+                }
+                if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+                {
+                    e.Handled = true;
+                }
+                if (e.KeyChar == '+')
+                {
+                    operation = "+";
+                    firstValue = Convert.ToDecimal(txtValue.Text);
+                    PreviousValue(firstValue);
+                }
+                if (e.KeyChar == '-')
+                {
+                    operation = "-";
+                    firstValue = Convert.ToDecimal(txtValue.Text);
+                    PreviousValue(firstValue);
+                }
+                if (e.KeyChar == '/')
+                {
+                    operation = "/";
+                    firstValue = Convert.ToDecimal(txtValue.Text);
+                    PreviousValue(firstValue);
+                }
+                if (e.KeyChar == '*')
+                {
+                    operation = "*";
+                    firstValue = Convert.ToDecimal(txtValue.Text);
+                    PreviousValue(firstValue);
+                }
+                if (e.KeyChar == 13)
+                {
+                    Calculate();
+                }
             }
-            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            catch(Exception ex)
             {
-                e.Handled = true;
-            }
-            if (e.KeyChar == '+')
-            {
-                operation = "+";
-                firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);            
-            }
-            if (e.KeyChar == '-')
-            {
-                operation = "-";
-                firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);              
-            }
-            if (e.KeyChar == '/')
-            {
-                operation = "/";
-                firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);               
-            }
-            if (e.KeyChar == '*')
-            {
-                operation = "*";
-                firstValue = Convert.ToDecimal(txtValue.Text);
-                PreviousValue(firstValue);               
-            }
-            if (e.KeyChar == 13)
-            {
-                Calculate();
-            }
-
+                MessageBox.Show("Ocorreu um erro");
+            }         
         }
         #endregion
     }
