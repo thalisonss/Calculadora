@@ -397,5 +397,6 @@ namespace Calculadora
             string coin = api.ConsultQuotation("BRL", "USD");
             txtCoinValueFirst.Text = coin;
         }
+
     }
 }

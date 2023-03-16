@@ -43,12 +43,4 @@ namespace Calculadora.API.Models
         [JsonProperty("create_date")]
         public string CreateDate;
     }
-    
-    public class Root
-    {
-        [JsonProperty("BRLUSD")]
-        public QuotationModel BRLUSD;
-    }
-
-
 }

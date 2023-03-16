@@ -23,7 +23,7 @@ namespace Calculadora.API
                 {
                     var result = response.Content.ReadAsStringAsync().Result;
 
-                    Root model = JsonConvert.DeserializeObject<Root>(result);
+                    CoinModel model = JsonConvert.DeserializeObject<CoinModel>(result);
 
                     string compra = model.BRLUSD.Bid;
 

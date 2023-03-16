@@ -8,14 +8,17 @@ using System.Threading.Tasks;
 namespace Calculadora.API.Models
 {
     public class CoinModel
-    {
-        string coins = string.Empty;
+    {       
         public CoinModel() 
         {
-            Coins = new QuotationModel();
+            BRLUSD = new QuotationModel();
+            USDBRL = new QuotationModel();
         }
 
-        [JsonProperty(PropertyName = coins)]
-        public QuotationModel Coins { get; set; }
+        [JsonProperty(PropertyName = "BRLUSD")]
+        public QuotationModel BRLUSD { get; set; }
+
+        [JsonProperty(PropertyName = "USDBRL")]
+        public QuotationModel USDBRL { get; set; }
     }
 }
