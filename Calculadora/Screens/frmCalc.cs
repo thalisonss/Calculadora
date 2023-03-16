@@ -1,7 +1,11 @@
 ﻿#region | Using |
+using Calculadora.API;
+using Newtonsoft.Json;
 using System;
 using System.Drawing;
 using System.Globalization;
+using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 #endregion
 
@@ -386,5 +390,12 @@ namespace Calculadora
             }         
         }
         #endregion
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            AwesomeAPI api = new AwesomeAPI();
+            string coin = api.ConsultQuotation("BRL", "USD");
+            txtCoinValueFirst.Text = coin;
+        }
     }
 }

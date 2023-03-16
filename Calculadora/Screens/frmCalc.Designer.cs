@@ -51,14 +51,18 @@
             this.panelBorderForm = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnNegative = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpgCoin = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
+            this.txtCoinValueSecond = new System.Windows.Forms.TextBox();
+            this.btnConvert = new System.Windows.Forms.Button();
             this.panelBorderForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.Calculadora.SuspendLayout();
+            this.tpgCoin.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtValue
@@ -373,15 +377,16 @@
             this.btnNegative.UseVisualStyleBackColor = true;
             this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Controls.Add(this.Calculadora);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 38);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(492, 490);
-            this.tabControl1.TabIndex = 21;
+            this.tabControl.Controls.Add(this.Calculadora);
+            this.tabControl.Controls.Add(this.tpgCoin);
+            this.tabControl.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabControl.Location = new System.Drawing.Point(0, 38);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(492, 490);
+            this.tabControl.TabIndex = 21;
             // 
             // Calculadora
             // 
@@ -414,15 +419,18 @@
             this.Calculadora.TabIndex = 0;
             this.Calculadora.Text = "Calculadora";
             // 
-            // tabPage2
+            // tpgCoin
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(484, 464);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpgCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.tpgCoin.Controls.Add(this.btnConvert);
+            this.tpgCoin.Controls.Add(this.txtCoinValueSecond);
+            this.tpgCoin.Controls.Add(this.txtCoinValueFirst);
+            this.tpgCoin.Location = new System.Drawing.Point(4, 22);
+            this.tpgCoin.Name = "tpgCoin";
+            this.tpgCoin.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgCoin.Size = new System.Drawing.Size(484, 464);
+            this.tpgCoin.TabIndex = 1;
+            this.tpgCoin.Text = "Moedas";
             // 
             // panel1
             // 
@@ -432,6 +440,43 @@
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
             // 
+            // txtCoinValueFirst
+            // 
+            this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.txtCoinValueFirst.Location = new System.Drawing.Point(15, 47);
+            this.txtCoinValueFirst.Name = "txtCoinValueFirst";
+            this.txtCoinValueFirst.Size = new System.Drawing.Size(456, 34);
+            this.txtCoinValueFirst.TabIndex = 1;
+            this.txtCoinValueFirst.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCoinValueSecond
+            // 
+            this.txtCoinValueSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.txtCoinValueSecond.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.txtCoinValueSecond.Location = new System.Drawing.Point(3, 130);
+            this.txtCoinValueSecond.Name = "txtCoinValueSecond";
+            this.txtCoinValueSecond.Size = new System.Drawing.Size(456, 34);
+            this.txtCoinValueSecond.TabIndex = 2;
+            this.txtCoinValueSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btnConvert
+            // 
+            this.btnConvert.BackColor = System.Drawing.Color.Transparent;
+            this.btnConvert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnConvert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConvert.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvert.Location = new System.Drawing.Point(140, 203);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(180, 66);
+            this.btnConvert.TabIndex = 3;
+            this.btnConvert.Text = "Converter";
+            this.btnConvert.UseVisualStyleBackColor = false;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
+            // 
             // frmCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,15 +484,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(491, 547);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.panelBorderForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalc";
             this.panelBorderForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.Calculadora.ResumeLayout(false);
             this.Calculadora.PerformLayout();
+            this.tpgCoin.ResumeLayout(false);
+            this.tpgCoin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -476,11 +523,14 @@
         private System.Windows.Forms.Label lblPreviousValue;
         private System.Windows.Forms.Panel panelBorderForm;
         private System.Windows.Forms.Button btnNegative;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage Calculadora;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tpgCoin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btnExit;
+        private System.Windows.Forms.Button btnConvert;
+        private System.Windows.Forms.TextBox txtCoinValueSecond;
+        private System.Windows.Forms.TextBox txtCoinValueFirst;
     }
 }
 
