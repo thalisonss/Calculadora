@@ -25,9 +25,22 @@ namespace Calculadora.API
 
                     CoinModel model = JsonConvert.DeserializeObject<CoinModel>(result);
 
-                    string compra = model.BRLUSD.Bid;
+                    string compra = string.Empty;
 
-                    return compra;
+                    if (firstCoin == "BRL" &&  secondCoin == "USD")
+                    {
+                        compra = model.BRLUSD.Bid;
+                        return compra;
+                    }
+                    else if (firstCoin == "USD" && secondCoin == "BRL")
+                    {
+                        compra = model.USDBRL.Bid;
+                        return compra;
+                    } 
+                    else
+                    {
+                        return null;
+                    }
                 }
                 else
                 {

@@ -19,6 +19,9 @@ namespace Calculadora
         }
 
         Database.CalculadoraDatabase db = new Database.CalculadoraDatabase();
+        AwesomeAPI api = new AwesomeAPI();
+
+        #region | Calculadora |
 
         #region | Variables |
 
@@ -391,12 +394,20 @@ namespace Calculadora
         }
         #endregion
 
+        #endregion
+
         private void btnConvert_Click(object sender, EventArgs e)
         {
-            AwesomeAPI api = new AwesomeAPI();
-            string coin = api.ConsultQuotation("BRL", "USD");
-            txtCoinValueFirst.Text = coin;
+            string taxa = api.ConsultQuotation(cboSecondCoin.Text, cboFirstCoin.Text);
+
+            string converter = taxa.Replace(".", ",");
+
+            decimal valor = Convert.ToDecimal(converter) * Convert.ToDecimal(txtCoinValueFirst.Text);
+
+            txtCoinValueSecond.Text = valor.ToString("F");
+
         }
+
 
     }
 }

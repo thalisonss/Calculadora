@@ -54,12 +54,14 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
             this.tpgCoin = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblSecondCurrencySymbols = new System.Windows.Forms.Label();
+            this.lblFirstCurrencySymbols = new System.Windows.Forms.Label();
+            this.cboFirstCoin = new System.Windows.Forms.ComboBox();
+            this.cboSecondCoin = new System.Windows.Forms.ComboBox();
             this.btnConvert = new System.Windows.Forms.Button();
             this.txtCoinValueSecond = new System.Windows.Forms.TextBox();
             this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panelBorderForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl.SuspendLayout();
@@ -424,8 +426,10 @@
             // tpgCoin
             // 
             this.tpgCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.tpgCoin.Controls.Add(this.comboBox2);
-            this.tpgCoin.Controls.Add(this.comboBox1);
+            this.tpgCoin.Controls.Add(this.lblSecondCurrencySymbols);
+            this.tpgCoin.Controls.Add(this.lblFirstCurrencySymbols);
+            this.tpgCoin.Controls.Add(this.cboFirstCoin);
+            this.tpgCoin.Controls.Add(this.cboSecondCoin);
             this.tpgCoin.Controls.Add(this.btnConvert);
             this.tpgCoin.Controls.Add(this.txtCoinValueSecond);
             this.tpgCoin.Controls.Add(this.txtCoinValueFirst);
@@ -436,18 +440,55 @@
             this.tpgCoin.TabIndex = 1;
             this.tpgCoin.Text = "Moedas";
             // 
-            // comboBox1
+            // lblSecondCurrencySymbols
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "BRL"});
-            this.comboBox1.Location = new System.Drawing.Point(15, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 42);
-            this.comboBox1.TabIndex = 4;
+            this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(15, 143);
+            this.lblSecondCurrencySymbols.Name = "lblSecondCurrencySymbols";
+            this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(63, 33);
+            this.lblSecondCurrencySymbols.TabIndex = 7;
+            this.lblSecondCurrencySymbols.Text = "$";
+            this.lblSecondCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblFirstCurrencySymbols
+            // 
+            this.lblFirstCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(15, 55);
+            this.lblFirstCurrencySymbols.Name = "lblFirstCurrencySymbols";
+            this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(63, 33);
+            this.lblFirstCurrencySymbols.TabIndex = 6;
+            this.lblFirstCurrencySymbols.Text = "R$";
+            this.lblFirstCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cboFirstCoin
+            // 
+            this.cboFirstCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.cboFirstCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFirstCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboFirstCoin.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.cboFirstCoin.FormattingEnabled = true;
+            this.cboFirstCoin.Items.AddRange(new object[] {
+            "BRL",
+            "USD"});
+            this.cboFirstCoin.Location = new System.Drawing.Point(15, 94);
+            this.cboFirstCoin.Name = "cboFirstCoin";
+            this.cboFirstCoin.Size = new System.Drawing.Size(121, 42);
+            this.cboFirstCoin.TabIndex = 5;
+            // 
+            // cboSecondCoin
+            // 
+            this.cboSecondCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.cboSecondCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSecondCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboSecondCoin.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.cboSecondCoin.FormattingEnabled = true;
+            this.cboSecondCoin.Items.AddRange(new object[] {
+            "BRL",
+            "USD"});
+            this.cboSecondCoin.Location = new System.Drawing.Point(15, 6);
+            this.cboSecondCoin.Name = "cboSecondCoin";
+            this.cboSecondCoin.Size = new System.Drawing.Size(121, 42);
+            this.cboSecondCoin.TabIndex = 4;
             // 
             // btnConvert
             // 
@@ -469,22 +510,20 @@
             this.txtCoinValueSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.txtCoinValueSecond.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueSecond.Location = new System.Drawing.Point(56, 142);
+            this.txtCoinValueSecond.Location = new System.Drawing.Point(84, 142);
             this.txtCoinValueSecond.Name = "txtCoinValueSecond";
-            this.txtCoinValueSecond.Size = new System.Drawing.Size(415, 34);
+            this.txtCoinValueSecond.Size = new System.Drawing.Size(387, 34);
             this.txtCoinValueSecond.TabIndex = 2;
-            this.txtCoinValueSecond.Text = "0";
             // 
             // txtCoinValueFirst
             // 
             this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueFirst.Location = new System.Drawing.Point(56, 54);
+            this.txtCoinValueFirst.Location = new System.Drawing.Point(84, 54);
             this.txtCoinValueFirst.Name = "txtCoinValueFirst";
-            this.txtCoinValueFirst.Size = new System.Drawing.Size(415, 34);
+            this.txtCoinValueFirst.Size = new System.Drawing.Size(387, 34);
             this.txtCoinValueFirst.TabIndex = 1;
-            this.txtCoinValueFirst.Text = "0";
             // 
             // panel1
             // 
@@ -493,19 +532,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "BRL"});
-            this.comboBox2.Location = new System.Drawing.Point(15, 94);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 42);
-            this.comboBox2.TabIndex = 5;
             // 
             // frmCalc
             // 
@@ -561,8 +587,10 @@
         private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.TextBox txtCoinValueSecond;
         private System.Windows.Forms.TextBox txtCoinValueFirst;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboSecondCoin;
+        private System.Windows.Forms.ComboBox cboFirstCoin;
+        private System.Windows.Forms.Label lblSecondCurrencySymbols;
+        private System.Windows.Forms.Label lblFirstCurrencySymbols;
     }
 }
 
