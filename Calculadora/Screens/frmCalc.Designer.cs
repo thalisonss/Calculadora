@@ -54,14 +54,15 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
             this.tpgCoin = new System.Windows.Forms.TabPage();
+            this.txtCoinValueSecond = new System.Windows.Forms.Label();
             this.lblSecondCurrencySymbols = new System.Windows.Forms.Label();
             this.lblFirstCurrencySymbols = new System.Windows.Forms.Label();
             this.cboFirstCoin = new System.Windows.Forms.ComboBox();
             this.cboSecondCoin = new System.Windows.Forms.ComboBox();
-            this.btnConvert = new System.Windows.Forms.Button();
-            this.txtCoinValueSecond = new System.Windows.Forms.TextBox();
             this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTaxa = new System.Windows.Forms.Label();
+            this.lblLastRateUpdate = new System.Windows.Forms.Label();
             this.panelBorderForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl.SuspendLayout();
@@ -426,36 +427,49 @@
             // tpgCoin
             // 
             this.tpgCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.tpgCoin.Controls.Add(this.lblLastRateUpdate);
+            this.tpgCoin.Controls.Add(this.lblTaxa);
+            this.tpgCoin.Controls.Add(this.txtCoinValueSecond);
             this.tpgCoin.Controls.Add(this.lblSecondCurrencySymbols);
             this.tpgCoin.Controls.Add(this.lblFirstCurrencySymbols);
             this.tpgCoin.Controls.Add(this.cboFirstCoin);
             this.tpgCoin.Controls.Add(this.cboSecondCoin);
-            this.tpgCoin.Controls.Add(this.btnConvert);
-            this.tpgCoin.Controls.Add(this.txtCoinValueSecond);
             this.tpgCoin.Controls.Add(this.txtCoinValueFirst);
             this.tpgCoin.Location = new System.Drawing.Point(4, 22);
             this.tpgCoin.Name = "tpgCoin";
             this.tpgCoin.Padding = new System.Windows.Forms.Padding(3);
             this.tpgCoin.Size = new System.Drawing.Size(484, 464);
             this.tpgCoin.TabIndex = 1;
-            this.tpgCoin.Text = "Moedas";
+            this.tpgCoin.Text = "Moeda";
+            // 
+            // txtCoinValueSecond
+            // 
+            this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 31F, System.Drawing.FontStyle.Italic);
+            this.txtCoinValueSecond.Location = new System.Drawing.Point(94, 151);
+            this.txtCoinValueSecond.Name = "txtCoinValueSecond";
+            this.txtCoinValueSecond.Size = new System.Drawing.Size(369, 51);
+            this.txtCoinValueSecond.TabIndex = 8;
+            this.txtCoinValueSecond.Text = "0";
+            this.txtCoinValueSecond.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblSecondCurrencySymbols
             // 
-            this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(15, 143);
+            this.lblSecondCurrencySymbols.AutoSize = true;
+            this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(23, 152);
             this.lblSecondCurrencySymbols.Name = "lblSecondCurrencySymbols";
-            this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(63, 33);
+            this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(48, 49);
             this.lblSecondCurrencySymbols.TabIndex = 7;
             this.lblSecondCurrencySymbols.Text = "$";
             this.lblSecondCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblFirstCurrencySymbols
             // 
+            this.lblFirstCurrencySymbols.AutoSize = true;
             this.lblFirstCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(15, 55);
+            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(22, 55);
             this.lblFirstCurrencySymbols.Name = "lblFirstCurrencySymbols";
-            this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(63, 33);
+            this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(52, 34);
             this.lblFirstCurrencySymbols.TabIndex = 6;
             this.lblFirstCurrencySymbols.Text = "R$";
             this.lblFirstCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -465,65 +479,43 @@
             this.cboFirstCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.cboFirstCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFirstCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboFirstCoin.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.cboFirstCoin.Font = new System.Drawing.Font("Verdana", 12F);
             this.cboFirstCoin.FormattingEnabled = true;
             this.cboFirstCoin.Items.AddRange(new object[] {
             "BRL",
             "USD"});
-            this.cboFirstCoin.Location = new System.Drawing.Point(15, 94);
+            this.cboFirstCoin.Location = new System.Drawing.Point(33, 210);
             this.cboFirstCoin.Name = "cboFirstCoin";
-            this.cboFirstCoin.Size = new System.Drawing.Size(121, 42);
+            this.cboFirstCoin.Size = new System.Drawing.Size(215, 26);
             this.cboFirstCoin.TabIndex = 5;
+            this.cboFirstCoin.TextChanged += new System.EventHandler(this.cboFirstCoin_TextChanged);
             // 
             // cboSecondCoin
             // 
             this.cboSecondCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.cboSecondCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSecondCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboSecondCoin.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.cboSecondCoin.Font = new System.Drawing.Font("Verdana", 12F);
             this.cboSecondCoin.FormattingEnabled = true;
             this.cboSecondCoin.Items.AddRange(new object[] {
             "BRL",
             "USD"});
-            this.cboSecondCoin.Location = new System.Drawing.Point(15, 6);
+            this.cboSecondCoin.Location = new System.Drawing.Point(33, 98);
             this.cboSecondCoin.Name = "cboSecondCoin";
-            this.cboSecondCoin.Size = new System.Drawing.Size(121, 42);
+            this.cboSecondCoin.Size = new System.Drawing.Size(215, 26);
             this.cboSecondCoin.TabIndex = 4;
-            // 
-            // btnConvert
-            // 
-            this.btnConvert.BackColor = System.Drawing.Color.Transparent;
-            this.btnConvert.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnConvert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConvert.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConvert.Location = new System.Drawing.Point(140, 203);
-            this.btnConvert.Name = "btnConvert";
-            this.btnConvert.Size = new System.Drawing.Size(180, 66);
-            this.btnConvert.TabIndex = 3;
-            this.btnConvert.Text = "Converter";
-            this.btnConvert.UseVisualStyleBackColor = false;
-            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
-            // 
-            // txtCoinValueSecond
-            // 
-            this.txtCoinValueSecond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.txtCoinValueSecond.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueSecond.Location = new System.Drawing.Point(84, 142);
-            this.txtCoinValueSecond.Name = "txtCoinValueSecond";
-            this.txtCoinValueSecond.Size = new System.Drawing.Size(387, 34);
-            this.txtCoinValueSecond.TabIndex = 2;
+            this.cboSecondCoin.TextChanged += new System.EventHandler(this.cboSecondCoin_TextChanged);
             // 
             // txtCoinValueFirst
             // 
             this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueFirst.Location = new System.Drawing.Point(84, 54);
+            this.txtCoinValueFirst.Location = new System.Drawing.Point(80, 55);
             this.txtCoinValueFirst.Name = "txtCoinValueFirst";
-            this.txtCoinValueFirst.Size = new System.Drawing.Size(387, 34);
+            this.txtCoinValueFirst.Size = new System.Drawing.Size(383, 34);
             this.txtCoinValueFirst.TabIndex = 1;
+            this.txtCoinValueFirst.TextChanged += new System.EventHandler(this.txtCoinValueFirst_TextChanged);
             // 
             // panel1
             // 
@@ -532,6 +524,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
+            // 
+            // lblTaxa
+            // 
+            this.lblTaxa.AutoSize = true;
+            this.lblTaxa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTaxa.Location = new System.Drawing.Point(39, 262);
+            this.lblTaxa.Name = "lblTaxa";
+            this.lblTaxa.Size = new System.Drawing.Size(0, 13);
+            this.lblTaxa.TabIndex = 9;
+            // 
+            // lblLastRateUpdate
+            // 
+            this.lblLastRateUpdate.AutoSize = true;
+            this.lblLastRateUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblLastRateUpdate.Location = new System.Drawing.Point(39, 285);
+            this.lblLastRateUpdate.Name = "lblLastRateUpdate";
+            this.lblLastRateUpdate.Size = new System.Drawing.Size(0, 13);
+            this.lblLastRateUpdate.TabIndex = 10;
             // 
             // frmCalc
             // 
@@ -584,13 +594,14 @@
         private System.Windows.Forms.TabPage tpgCoin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btnExit;
-        private System.Windows.Forms.Button btnConvert;
-        private System.Windows.Forms.TextBox txtCoinValueSecond;
         private System.Windows.Forms.TextBox txtCoinValueFirst;
         private System.Windows.Forms.ComboBox cboSecondCoin;
         private System.Windows.Forms.ComboBox cboFirstCoin;
         private System.Windows.Forms.Label lblSecondCurrencySymbols;
         private System.Windows.Forms.Label lblFirstCurrencySymbols;
+        private System.Windows.Forms.Label txtCoinValueSecond;
+        private System.Windows.Forms.Label lblTaxa;
+        private System.Windows.Forms.Label lblLastRateUpdate;
     }
 }
 

@@ -16,14 +16,15 @@ namespace Calculadora
         public frmCalc()
         {
             InitializeComponent();
+            cboFirstCoin.Text = "BRL";
+            cboSecondCoin.Text = "USD";
         }
 
         Database.CalculadoraDatabase db = new Database.CalculadoraDatabase();
-        AwesomeAPI api = new AwesomeAPI();
-
-        #region | Calculadora |
 
         #region | Variables |
+
+        #region | Variables - Basic Calculator |
 
         decimal firstValue = 0;
         decimal total = 0;
@@ -34,7 +35,19 @@ namespace Calculadora
 
         #endregion
 
-        #region | Controls event |
+        #region | Variables - Currency Converter |
+
+        string CoinValueFirst;
+        string currencyRate;
+        string convertedCurrency;
+
+        #endregion
+
+        #endregion
+
+        #region | Controls Events |
+
+        #region | Controls event - Basic Calculator |
 
         //Mover form com mouse
         private void panelBorderForm_MouseMove(object sender, MouseEventArgs e)
@@ -331,7 +344,55 @@ namespace Calculadora
         }
         #endregion
 
+        #region | Controls Events - Currency Converter |
+        private void txtCoinValueFirst_TextChanged(object sender, EventArgs e)
+        {
+            CoinValueFirst = txtCoinValueFirst.Text;
+            if (CoinValueFirst == string.Empty)
+                CoinValueFirst = "0";
+
+            currencyRate = db.CurrencyRate(cboSecondCoin.Text, cboFirstCoin.Text);
+
+            this.UpdateRate();
+
+            txtCoinValueSecond.Text = db.Calculate
+                (Convert.ToDecimal(currencyRate), Convert.ToDecimal(CoinValueFirst), "*").ToString("F");
+        }
+
+        private void cboSecondCoin_TextChanged(object sender, EventArgs e)
+        {
+            if (cboSecondCoin.Text == "BRL")
+            {
+                
+                lblFirstCurrencySymbols.Text = "R$";
+            }
+
+            if (cboSecondCoin.Text == "USD")
+            {
+                lblFirstCurrencySymbols.Text = "$";
+            }
+        }
+
+        private void cboFirstCoin_TextChanged(object sender, EventArgs e)
+        {
+            if (cboFirstCoin.Text == "BRL")
+            {
+                lblSecondCurrencySymbols.Text = "R$";
+            }
+
+            if (cboFirstCoin.Text == "USD")
+            {
+                lblSecondCurrencySymbols.Text = "$";
+            }
+        }
+
+        #endregion
+
+        #endregion
+
         #region | Functions |
+
+        #region | Functions - Basic Calculator |
         private void PreviousValue(decimal firstValue)
         {
             records = firstValue.ToString() + " " + operation + " ";
@@ -390,24 +451,24 @@ namespace Calculadora
             catch(Exception ex)
             {
                 MessageBox.Show("Ocorreu um erro");
-            }         
+            }
         }
-        #endregion
 
         #endregion
 
-        private void btnConvert_Click(object sender, EventArgs e)
+        #region | Functions - Currency Converter |
+
+        public void UpdateRate()
         {
-            string taxa = api.ConsultQuotation(cboSecondCoin.Text, cboFirstCoin.Text);
+            string exchangeRate = db.Calculate (Convert.ToDecimal(currencyRate), 1, "*").ToString();
 
-            string converter = taxa.Replace(".", ",");
-
-            decimal valor = Convert.ToDecimal(converter) * Convert.ToDecimal(txtCoinValueFirst.Text);
-
-            txtCoinValueSecond.Text = valor.ToString("F");
-
+            lblTaxa.Text = $"1 {cboSecondCoin.Text} = {exchangeRate} {cboFirstCoin.Text}";
+            lblLastRateUpdate.Text = $"Atualizado {DateTime.Now.ToString()}";
         }
 
+        #endregion
+
+            #endregion
 
     }
 }

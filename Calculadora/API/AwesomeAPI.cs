@@ -13,7 +13,7 @@ namespace Calculadora.API
     {
         public string ConsultQuotation(string firstCoin, string secondCoin)
         {
-            string strURL = "https://economia.awesomeapi.com.br/last/" + firstCoin + "-" + secondCoin;
+            string strURL = $"https://economia.awesomeapi.com.br/last/{firstCoin}{"-"}{secondCoin}";
 
             using (HttpClient client = new HttpClient())
             {
@@ -23,19 +23,15 @@ namespace Calculadora.API
                 {
                     var result = response.Content.ReadAsStringAsync().Result;
 
-                    CoinModel model = JsonConvert.DeserializeObject<CoinModel>(result);
-
-                    string compra = string.Empty;
+                    CoinModel model = JsonConvert.DeserializeObject<CoinModel>(result);                                 
 
                     if (firstCoin == "BRL" &&  secondCoin == "USD")
                     {
-                        compra = model.BRLUSD.Bid;
-                        return compra;
+                        return model.BRLUSD.Bid;
                     }
                     else if (firstCoin == "USD" && secondCoin == "BRL")
                     {
-                        compra = model.USDBRL.Bid;
-                        return compra;
+                        return model.USDBRL.Bid;
                     } 
                     else
                     {
