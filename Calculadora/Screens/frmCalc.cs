@@ -362,14 +362,18 @@ namespace Calculadora
         private void cboSecondCoin_TextChanged(object sender, EventArgs e)
         {
             if (cboSecondCoin.Text == "BRL")
-            {
-                
+            {   
                 lblFirstCurrencySymbols.Text = "R$";
             }
 
             if (cboSecondCoin.Text == "USD")
             {
                 lblFirstCurrencySymbols.Text = "$";
+            }
+
+            if (cboSecondCoin.Text == "EUR")
+            {
+                lblFirstCurrencySymbols.Text = "€";
             }
         }
 
@@ -383,6 +387,154 @@ namespace Calculadora
             if (cboFirstCoin.Text == "USD")
             {
                 lblSecondCurrencySymbols.Text = "$";
+            }
+            if (cboFirstCoin.Text == "EUR")
+            {
+                lblSecondCurrencySymbols.Text = "€";
+            }
+        }
+
+        private void btnCoinZero_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "0";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinOne_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "1";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinTwo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "2";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinThree_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "3";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinFour_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "4";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinFive_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "5";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinSix_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "6";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinSeven_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "7";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinEight_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "8";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinNine_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += "9";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinComma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text += ",";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
+            }
+        }
+
+        private void btnCoinCE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtCoinValueFirst.Text = string.Empty;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro");
             }
         }
 

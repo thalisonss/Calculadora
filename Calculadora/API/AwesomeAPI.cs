@@ -29,10 +29,26 @@ namespace Calculadora.API
                     {
                         return model.BRLUSD.Bid;
                     }
+                    else if (firstCoin == "BRL" && secondCoin == "EUR")
+                    {
+                        return model.BRLEUR.Bid;
+                    }
                     else if (firstCoin == "USD" && secondCoin == "BRL")
                     {
                         return model.USDBRL.Bid;
-                    } 
+                    }
+                    else if (firstCoin == "USD" && secondCoin == "EUR")
+                    {
+                        return model.USDEUR.Bid;
+                    }
+                    else if (firstCoin == "EUR" && secondCoin == "BRL")
+                    {
+                        return model.EURBRL.Bid;
+                    }
+                    else if (firstCoin == "EUR" && secondCoin == "USD")
+                    {
+                        return model.EURUSD.Bid;
+                    }
                     else
                     {
                         return null;

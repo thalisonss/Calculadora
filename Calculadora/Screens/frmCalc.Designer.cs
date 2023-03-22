@@ -29,31 +29,33 @@
         private void InitializeComponent()
         {
             this.txtValue = new System.Windows.Forms.TextBox();
-            this.btnSeven = new System.Windows.Forms.Button();
-            this.btnEight = new System.Windows.Forms.Button();
-            this.btnNine = new System.Windows.Forms.Button();
-            this.btnFour = new System.Windows.Forms.Button();
-            this.btnFive = new System.Windows.Forms.Button();
-            this.btnOne = new System.Windows.Forms.Button();
-            this.btnSix = new System.Windows.Forms.Button();
-            this.btnTwo = new System.Windows.Forms.Button();
-            this.btnThree = new System.Windows.Forms.Button();
-            this.btnZero = new System.Windows.Forms.Button();
-            this.btnComa = new System.Windows.Forms.Button();
-            this.btnSum = new System.Windows.Forms.Button();
-            this.btnSubtraction = new System.Windows.Forms.Button();
-            this.btnMultiplication = new System.Windows.Forms.Button();
-            this.btnDivision = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
-            this.btnCE = new System.Windows.Forms.Button();
-            this.btnEqual = new System.Windows.Forms.Button();
+            this.btnCalcSeven = new System.Windows.Forms.Button();
+            this.btnCalcEight = new System.Windows.Forms.Button();
+            this.btnCalcNine = new System.Windows.Forms.Button();
+            this.btnCalcFour = new System.Windows.Forms.Button();
+            this.btnCalcFive = new System.Windows.Forms.Button();
+            this.btnCalcOne = new System.Windows.Forms.Button();
+            this.btnCalcSix = new System.Windows.Forms.Button();
+            this.btnCalcTwo = new System.Windows.Forms.Button();
+            this.btnCalcThree = new System.Windows.Forms.Button();
+            this.btnCalcZero = new System.Windows.Forms.Button();
+            this.btnCalcComa = new System.Windows.Forms.Button();
+            this.btnCalcSum = new System.Windows.Forms.Button();
+            this.btnCalcSubtraction = new System.Windows.Forms.Button();
+            this.btnCalcMultiplication = new System.Windows.Forms.Button();
+            this.btnCalcDivision = new System.Windows.Forms.Button();
+            this.btnCalcC = new System.Windows.Forms.Button();
+            this.btnCalcCE = new System.Windows.Forms.Button();
+            this.btnCalcEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
             this.panelBorderForm = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.PictureBox();
-            this.btnNegative = new System.Windows.Forms.Button();
+            this.btnCalcNegative = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
             this.tpgCoin = new System.Windows.Forms.TabPage();
+            this.lblLastRateUpdate = new System.Windows.Forms.Label();
+            this.lblTaxa = new System.Windows.Forms.Label();
             this.txtCoinValueSecond = new System.Windows.Forms.Label();
             this.lblSecondCurrencySymbols = new System.Windows.Forms.Label();
             this.lblFirstCurrencySymbols = new System.Windows.Forms.Label();
@@ -61,8 +63,18 @@
             this.cboSecondCoin = new System.Windows.Forms.ComboBox();
             this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTaxa = new System.Windows.Forms.Label();
-            this.lblLastRateUpdate = new System.Windows.Forms.Label();
+            this.btnCoinSeven = new System.Windows.Forms.Button();
+            this.btnCoinEight = new System.Windows.Forms.Button();
+            this.btnCoinNine = new System.Windows.Forms.Button();
+            this.btnCoinFour = new System.Windows.Forms.Button();
+            this.btnCoinFive = new System.Windows.Forms.Button();
+            this.btnCoinOne = new System.Windows.Forms.Button();
+            this.btnCoinSix = new System.Windows.Forms.Button();
+            this.btnCoinTwo = new System.Windows.Forms.Button();
+            this.btnCoinThree = new System.Windows.Forms.Button();
+            this.btnCoinComma = new System.Windows.Forms.Button();
+            this.btnCoinZero = new System.Windows.Forms.Button();
+            this.btnCoinCE = new System.Windows.Forms.Button();
             this.panelBorderForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl.SuspendLayout();
@@ -82,258 +94,258 @@
             this.txtValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValue_KeyPress);
             // 
-            // btnSeven
+            // btnCalcSeven
             // 
-            this.btnSeven.BackColor = System.Drawing.Color.Transparent;
-            this.btnSeven.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeven.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeven.Location = new System.Drawing.Point(15, 101);
-            this.btnSeven.Name = "btnSeven";
-            this.btnSeven.Size = new System.Drawing.Size(102, 66);
-            this.btnSeven.TabIndex = 1;
-            this.btnSeven.Text = "7";
-            this.btnSeven.UseVisualStyleBackColor = false;
-            this.btnSeven.Click += new System.EventHandler(this.btnSeven_Click);
+            this.btnCalcSeven.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcSeven.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcSeven.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcSeven.Location = new System.Drawing.Point(15, 101);
+            this.btnCalcSeven.Name = "btnCalcSeven";
+            this.btnCalcSeven.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcSeven.TabIndex = 1;
+            this.btnCalcSeven.Text = "7";
+            this.btnCalcSeven.UseVisualStyleBackColor = false;
+            this.btnCalcSeven.Click += new System.EventHandler(this.btnSeven_Click);
             // 
-            // btnEight
+            // btnCalcEight
             // 
-            this.btnEight.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnEight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEight.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEight.Location = new System.Drawing.Point(123, 101);
-            this.btnEight.Name = "btnEight";
-            this.btnEight.Size = new System.Drawing.Size(102, 66);
-            this.btnEight.TabIndex = 2;
-            this.btnEight.Text = "8";
-            this.btnEight.UseVisualStyleBackColor = true;
-            this.btnEight.Click += new System.EventHandler(this.btnEight_Click);
+            this.btnCalcEight.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcEight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcEight.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcEight.Location = new System.Drawing.Point(123, 101);
+            this.btnCalcEight.Name = "btnCalcEight";
+            this.btnCalcEight.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcEight.TabIndex = 2;
+            this.btnCalcEight.Text = "8";
+            this.btnCalcEight.UseVisualStyleBackColor = true;
+            this.btnCalcEight.Click += new System.EventHandler(this.btnEight_Click);
             // 
-            // btnNine
+            // btnCalcNine
             // 
-            this.btnNine.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNine.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNine.Location = new System.Drawing.Point(231, 101);
-            this.btnNine.Name = "btnNine";
-            this.btnNine.Size = new System.Drawing.Size(102, 66);
-            this.btnNine.TabIndex = 3;
-            this.btnNine.Text = "9";
-            this.btnNine.UseVisualStyleBackColor = true;
-            this.btnNine.Click += new System.EventHandler(this.btnNine_Click);
+            this.btnCalcNine.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcNine.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcNine.Location = new System.Drawing.Point(231, 101);
+            this.btnCalcNine.Name = "btnCalcNine";
+            this.btnCalcNine.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcNine.TabIndex = 3;
+            this.btnCalcNine.Text = "9";
+            this.btnCalcNine.UseVisualStyleBackColor = true;
+            this.btnCalcNine.Click += new System.EventHandler(this.btnNine_Click);
             // 
-            // btnFour
+            // btnCalcFour
             // 
-            this.btnFour.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFour.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFour.Location = new System.Drawing.Point(15, 173);
-            this.btnFour.Name = "btnFour";
-            this.btnFour.Size = new System.Drawing.Size(102, 66);
-            this.btnFour.TabIndex = 4;
-            this.btnFour.Text = "4";
-            this.btnFour.UseVisualStyleBackColor = true;
-            this.btnFour.Click += new System.EventHandler(this.btnFour_Click);
+            this.btnCalcFour.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcFour.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcFour.Location = new System.Drawing.Point(15, 173);
+            this.btnCalcFour.Name = "btnCalcFour";
+            this.btnCalcFour.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcFour.TabIndex = 4;
+            this.btnCalcFour.Text = "4";
+            this.btnCalcFour.UseVisualStyleBackColor = true;
+            this.btnCalcFour.Click += new System.EventHandler(this.btnFour_Click);
             // 
-            // btnFive
+            // btnCalcFive
             // 
-            this.btnFive.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFive.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFive.Location = new System.Drawing.Point(123, 173);
-            this.btnFive.Name = "btnFive";
-            this.btnFive.Size = new System.Drawing.Size(102, 66);
-            this.btnFive.TabIndex = 5;
-            this.btnFive.Text = "5";
-            this.btnFive.UseVisualStyleBackColor = true;
-            this.btnFive.Click += new System.EventHandler(this.btnFive_Click);
+            this.btnCalcFive.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcFive.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcFive.Location = new System.Drawing.Point(123, 173);
+            this.btnCalcFive.Name = "btnCalcFive";
+            this.btnCalcFive.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcFive.TabIndex = 5;
+            this.btnCalcFive.Text = "5";
+            this.btnCalcFive.UseVisualStyleBackColor = true;
+            this.btnCalcFive.Click += new System.EventHandler(this.btnFive_Click);
             // 
-            // btnOne
+            // btnCalcOne
             // 
-            this.btnOne.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOne.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(15, 245);
-            this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(102, 66);
-            this.btnOne.TabIndex = 6;
-            this.btnOne.Text = "1";
-            this.btnOne.UseVisualStyleBackColor = true;
-            this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
+            this.btnCalcOne.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcOne.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcOne.Location = new System.Drawing.Point(15, 245);
+            this.btnCalcOne.Name = "btnCalcOne";
+            this.btnCalcOne.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcOne.TabIndex = 6;
+            this.btnCalcOne.Text = "1";
+            this.btnCalcOne.UseVisualStyleBackColor = true;
+            this.btnCalcOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
-            // btnSix
+            // btnCalcSix
             // 
-            this.btnSix.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnSix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSix.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSix.Location = new System.Drawing.Point(231, 173);
-            this.btnSix.Name = "btnSix";
-            this.btnSix.Size = new System.Drawing.Size(102, 66);
-            this.btnSix.TabIndex = 6;
-            this.btnSix.Text = "6";
-            this.btnSix.UseVisualStyleBackColor = true;
-            this.btnSix.Click += new System.EventHandler(this.btnSix_Click);
+            this.btnCalcSix.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcSix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcSix.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcSix.Location = new System.Drawing.Point(231, 173);
+            this.btnCalcSix.Name = "btnCalcSix";
+            this.btnCalcSix.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcSix.TabIndex = 6;
+            this.btnCalcSix.Text = "6";
+            this.btnCalcSix.UseVisualStyleBackColor = true;
+            this.btnCalcSix.Click += new System.EventHandler(this.btnSix_Click);
             // 
-            // btnTwo
+            // btnCalcTwo
             // 
-            this.btnTwo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTwo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTwo.Location = new System.Drawing.Point(123, 245);
-            this.btnTwo.Name = "btnTwo";
-            this.btnTwo.Size = new System.Drawing.Size(102, 66);
-            this.btnTwo.TabIndex = 7;
-            this.btnTwo.Text = "2";
-            this.btnTwo.UseVisualStyleBackColor = true;
-            this.btnTwo.Click += new System.EventHandler(this.btnTwo_Click);
+            this.btnCalcTwo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcTwo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcTwo.Location = new System.Drawing.Point(123, 245);
+            this.btnCalcTwo.Name = "btnCalcTwo";
+            this.btnCalcTwo.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcTwo.TabIndex = 7;
+            this.btnCalcTwo.Text = "2";
+            this.btnCalcTwo.UseVisualStyleBackColor = true;
+            this.btnCalcTwo.Click += new System.EventHandler(this.btnTwo_Click);
             // 
-            // btnThree
+            // btnCalcThree
             // 
-            this.btnThree.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThree.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThree.Location = new System.Drawing.Point(231, 245);
-            this.btnThree.Name = "btnThree";
-            this.btnThree.Size = new System.Drawing.Size(102, 66);
-            this.btnThree.TabIndex = 8;
-            this.btnThree.Text = "3";
-            this.btnThree.UseVisualStyleBackColor = true;
-            this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
+            this.btnCalcThree.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcThree.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcThree.Location = new System.Drawing.Point(231, 245);
+            this.btnCalcThree.Name = "btnCalcThree";
+            this.btnCalcThree.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcThree.TabIndex = 8;
+            this.btnCalcThree.Text = "3";
+            this.btnCalcThree.UseVisualStyleBackColor = true;
+            this.btnCalcThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
-            // btnZero
+            // btnCalcZero
             // 
-            this.btnZero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZero.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(15, 317);
-            this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(210, 66);
-            this.btnZero.TabIndex = 9;
-            this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = true;
-            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
+            this.btnCalcZero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcZero.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcZero.Location = new System.Drawing.Point(15, 317);
+            this.btnCalcZero.Name = "btnCalcZero";
+            this.btnCalcZero.Size = new System.Drawing.Size(210, 66);
+            this.btnCalcZero.TabIndex = 9;
+            this.btnCalcZero.Text = "0";
+            this.btnCalcZero.UseVisualStyleBackColor = true;
+            this.btnCalcZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
-            // btnComa
+            // btnCalcComa
             // 
-            this.btnComa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnComa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnComa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComa.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComa.Location = new System.Drawing.Point(231, 317);
-            this.btnComa.Name = "btnComa";
-            this.btnComa.Size = new System.Drawing.Size(102, 66);
-            this.btnComa.TabIndex = 10;
-            this.btnComa.Text = ",";
-            this.btnComa.UseVisualStyleBackColor = true;
-            this.btnComa.Click += new System.EventHandler(this.btnDot_Click);
+            this.btnCalcComa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcComa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcComa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcComa.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcComa.Location = new System.Drawing.Point(231, 317);
+            this.btnCalcComa.Name = "btnCalcComa";
+            this.btnCalcComa.Size = new System.Drawing.Size(102, 66);
+            this.btnCalcComa.TabIndex = 10;
+            this.btnCalcComa.Text = ",";
+            this.btnCalcComa.UseVisualStyleBackColor = true;
+            this.btnCalcComa.Click += new System.EventHandler(this.btnDot_Click);
             // 
-            // btnSum
+            // btnCalcSum
             // 
-            this.btnSum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnSum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnSum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSum.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSum.Location = new System.Drawing.Point(339, 389);
-            this.btnSum.Name = "btnSum";
-            this.btnSum.Size = new System.Drawing.Size(132, 68);
-            this.btnSum.TabIndex = 11;
-            this.btnSum.Text = "+";
-            this.btnSum.UseVisualStyleBackColor = true;
-            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
+            this.btnCalcSum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcSum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcSum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcSum.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcSum.Location = new System.Drawing.Point(339, 389);
+            this.btnCalcSum.Name = "btnCalcSum";
+            this.btnCalcSum.Size = new System.Drawing.Size(132, 68);
+            this.btnCalcSum.TabIndex = 11;
+            this.btnCalcSum.Text = "+";
+            this.btnCalcSum.UseVisualStyleBackColor = true;
+            this.btnCalcSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
-            // btnSubtraction
+            // btnCalcSubtraction
             // 
-            this.btnSubtraction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnSubtraction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnSubtraction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubtraction.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtraction.Location = new System.Drawing.Point(339, 317);
-            this.btnSubtraction.Name = "btnSubtraction";
-            this.btnSubtraction.Size = new System.Drawing.Size(132, 66);
-            this.btnSubtraction.TabIndex = 12;
-            this.btnSubtraction.Text = "-";
-            this.btnSubtraction.UseVisualStyleBackColor = true;
-            this.btnSubtraction.Click += new System.EventHandler(this.btnSubtraction_Click);
+            this.btnCalcSubtraction.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcSubtraction.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcSubtraction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcSubtraction.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcSubtraction.Location = new System.Drawing.Point(339, 317);
+            this.btnCalcSubtraction.Name = "btnCalcSubtraction";
+            this.btnCalcSubtraction.Size = new System.Drawing.Size(132, 66);
+            this.btnCalcSubtraction.TabIndex = 12;
+            this.btnCalcSubtraction.Text = "-";
+            this.btnCalcSubtraction.UseVisualStyleBackColor = true;
+            this.btnCalcSubtraction.Click += new System.EventHandler(this.btnSubtraction_Click);
             // 
-            // btnMultiplication
+            // btnCalcMultiplication
             // 
-            this.btnMultiplication.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnMultiplication.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiplication.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplication.Location = new System.Drawing.Point(339, 245);
-            this.btnMultiplication.Name = "btnMultiplication";
-            this.btnMultiplication.Size = new System.Drawing.Size(132, 66);
-            this.btnMultiplication.TabIndex = 13;
-            this.btnMultiplication.Text = "x";
-            this.btnMultiplication.UseVisualStyleBackColor = true;
-            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
+            this.btnCalcMultiplication.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcMultiplication.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcMultiplication.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcMultiplication.Location = new System.Drawing.Point(339, 245);
+            this.btnCalcMultiplication.Name = "btnCalcMultiplication";
+            this.btnCalcMultiplication.Size = new System.Drawing.Size(132, 66);
+            this.btnCalcMultiplication.TabIndex = 13;
+            this.btnCalcMultiplication.Text = "x";
+            this.btnCalcMultiplication.UseVisualStyleBackColor = true;
+            this.btnCalcMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
             // 
-            // btnDivision
+            // btnCalcDivision
             // 
-            this.btnDivision.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnDivision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDivision.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivision.Location = new System.Drawing.Point(339, 173);
-            this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(132, 66);
-            this.btnDivision.TabIndex = 14;
-            this.btnDivision.Text = "÷";
-            this.btnDivision.UseVisualStyleBackColor = true;
-            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            this.btnCalcDivision.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcDivision.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcDivision.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcDivision.Location = new System.Drawing.Point(339, 173);
+            this.btnCalcDivision.Name = "btnCalcDivision";
+            this.btnCalcDivision.Size = new System.Drawing.Size(132, 66);
+            this.btnCalcDivision.TabIndex = 14;
+            this.btnCalcDivision.Text = "÷";
+            this.btnCalcDivision.UseVisualStyleBackColor = true;
+            this.btnCalcDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
-            // btnC
+            // btnCalcC
             // 
-            this.btnC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnC.Location = new System.Drawing.Point(339, 101);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(63, 66);
-            this.btnC.TabIndex = 15;
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = true;
-            this.btnC.Click += new System.EventHandler(this.btnC_Click);
+            this.btnCalcC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcC.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcC.Location = new System.Drawing.Point(339, 101);
+            this.btnCalcC.Name = "btnCalcC";
+            this.btnCalcC.Size = new System.Drawing.Size(63, 66);
+            this.btnCalcC.TabIndex = 15;
+            this.btnCalcC.Text = "C";
+            this.btnCalcC.UseVisualStyleBackColor = true;
+            this.btnCalcC.Click += new System.EventHandler(this.btnC_Click);
             // 
-            // btnCE
+            // btnCalcCE
             // 
-            this.btnCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCE.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.Location = new System.Drawing.Point(408, 101);
-            this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(63, 66);
-            this.btnCE.TabIndex = 16;
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = true;
-            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
+            this.btnCalcCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcCE.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcCE.Location = new System.Drawing.Point(408, 101);
+            this.btnCalcCE.Name = "btnCalcCE";
+            this.btnCalcCE.Size = new System.Drawing.Size(63, 66);
+            this.btnCalcCE.TabIndex = 16;
+            this.btnCalcCE.Text = "CE";
+            this.btnCalcCE.UseVisualStyleBackColor = true;
+            this.btnCalcCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
-            // btnEqual
+            // btnCalcEqual
             // 
-            this.btnEqual.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnEqual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEqual.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(123, 389);
-            this.btnEqual.Name = "btnEqual";
-            this.btnEqual.Size = new System.Drawing.Size(210, 68);
-            this.btnEqual.TabIndex = 17;
-            this.btnEqual.Text = "=";
-            this.btnEqual.UseVisualStyleBackColor = true;
-            this.btnEqual.Click += new System.EventHandler(this.btnResult_Click);
+            this.btnCalcEqual.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcEqual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcEqual.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcEqual.Location = new System.Drawing.Point(123, 389);
+            this.btnCalcEqual.Name = "btnCalcEqual";
+            this.btnCalcEqual.Size = new System.Drawing.Size(210, 68);
+            this.btnCalcEqual.TabIndex = 17;
+            this.btnCalcEqual.Text = "=";
+            this.btnCalcEqual.UseVisualStyleBackColor = true;
+            this.btnCalcEqual.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // lblPreviousValue
             // 
@@ -368,19 +380,19 @@
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnNegative
+            // btnCalcNegative
             // 
-            this.btnNegative.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnNegative.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnNegative.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNegative.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNegative.Location = new System.Drawing.Point(15, 389);
-            this.btnNegative.Name = "btnNegative";
-            this.btnNegative.Size = new System.Drawing.Size(102, 68);
-            this.btnNegative.TabIndex = 20;
-            this.btnNegative.Text = "+/-";
-            this.btnNegative.UseVisualStyleBackColor = true;
-            this.btnNegative.Click += new System.EventHandler(this.btnNegative_Click);
+            this.btnCalcNegative.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCalcNegative.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCalcNegative.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcNegative.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcNegative.Location = new System.Drawing.Point(15, 389);
+            this.btnCalcNegative.Name = "btnCalcNegative";
+            this.btnCalcNegative.Size = new System.Drawing.Size(102, 68);
+            this.btnCalcNegative.TabIndex = 20;
+            this.btnCalcNegative.Text = "+/-";
+            this.btnCalcNegative.UseVisualStyleBackColor = true;
+            this.btnCalcNegative.Click += new System.EventHandler(this.btnNegative_Click);
             // 
             // tabControl
             // 
@@ -397,26 +409,26 @@
             // 
             this.Calculadora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.Calculadora.Controls.Add(this.lblPreviousValue);
-            this.Calculadora.Controls.Add(this.btnNegative);
+            this.Calculadora.Controls.Add(this.btnCalcNegative);
             this.Calculadora.Controls.Add(this.txtValue);
-            this.Calculadora.Controls.Add(this.btnSeven);
-            this.Calculadora.Controls.Add(this.btnEight);
-            this.Calculadora.Controls.Add(this.btnEqual);
-            this.Calculadora.Controls.Add(this.btnNine);
-            this.Calculadora.Controls.Add(this.btnCE);
-            this.Calculadora.Controls.Add(this.btnFour);
-            this.Calculadora.Controls.Add(this.btnC);
-            this.Calculadora.Controls.Add(this.btnFive);
-            this.Calculadora.Controls.Add(this.btnDivision);
-            this.Calculadora.Controls.Add(this.btnOne);
-            this.Calculadora.Controls.Add(this.btnMultiplication);
-            this.Calculadora.Controls.Add(this.btnSix);
-            this.Calculadora.Controls.Add(this.btnSubtraction);
-            this.Calculadora.Controls.Add(this.btnTwo);
-            this.Calculadora.Controls.Add(this.btnSum);
-            this.Calculadora.Controls.Add(this.btnThree);
-            this.Calculadora.Controls.Add(this.btnComa);
-            this.Calculadora.Controls.Add(this.btnZero);
+            this.Calculadora.Controls.Add(this.btnCalcSeven);
+            this.Calculadora.Controls.Add(this.btnCalcEight);
+            this.Calculadora.Controls.Add(this.btnCalcEqual);
+            this.Calculadora.Controls.Add(this.btnCalcNine);
+            this.Calculadora.Controls.Add(this.btnCalcCE);
+            this.Calculadora.Controls.Add(this.btnCalcFour);
+            this.Calculadora.Controls.Add(this.btnCalcC);
+            this.Calculadora.Controls.Add(this.btnCalcFive);
+            this.Calculadora.Controls.Add(this.btnCalcDivision);
+            this.Calculadora.Controls.Add(this.btnCalcOne);
+            this.Calculadora.Controls.Add(this.btnCalcMultiplication);
+            this.Calculadora.Controls.Add(this.btnCalcSix);
+            this.Calculadora.Controls.Add(this.btnCalcSubtraction);
+            this.Calculadora.Controls.Add(this.btnCalcTwo);
+            this.Calculadora.Controls.Add(this.btnCalcSum);
+            this.Calculadora.Controls.Add(this.btnCalcThree);
+            this.Calculadora.Controls.Add(this.btnCalcComa);
+            this.Calculadora.Controls.Add(this.btnCalcZero);
             this.Calculadora.Location = new System.Drawing.Point(4, 22);
             this.Calculadora.Name = "Calculadora";
             this.Calculadora.Padding = new System.Windows.Forms.Padding(3);
@@ -427,6 +439,18 @@
             // tpgCoin
             // 
             this.tpgCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.tpgCoin.Controls.Add(this.btnCoinCE);
+            this.tpgCoin.Controls.Add(this.btnCoinSeven);
+            this.tpgCoin.Controls.Add(this.btnCoinEight);
+            this.tpgCoin.Controls.Add(this.btnCoinNine);
+            this.tpgCoin.Controls.Add(this.btnCoinFour);
+            this.tpgCoin.Controls.Add(this.btnCoinFive);
+            this.tpgCoin.Controls.Add(this.btnCoinOne);
+            this.tpgCoin.Controls.Add(this.btnCoinSix);
+            this.tpgCoin.Controls.Add(this.btnCoinTwo);
+            this.tpgCoin.Controls.Add(this.btnCoinThree);
+            this.tpgCoin.Controls.Add(this.btnCoinComma);
+            this.tpgCoin.Controls.Add(this.btnCoinZero);
             this.tpgCoin.Controls.Add(this.lblLastRateUpdate);
             this.tpgCoin.Controls.Add(this.lblTaxa);
             this.tpgCoin.Controls.Add(this.txtCoinValueSecond);
@@ -442,10 +466,28 @@
             this.tpgCoin.TabIndex = 1;
             this.tpgCoin.Text = "Moeda";
             // 
+            // lblLastRateUpdate
+            // 
+            this.lblLastRateUpdate.AutoSize = true;
+            this.lblLastRateUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblLastRateUpdate.Location = new System.Drawing.Point(38, 223);
+            this.lblLastRateUpdate.Name = "lblLastRateUpdate";
+            this.lblLastRateUpdate.Size = new System.Drawing.Size(0, 13);
+            this.lblLastRateUpdate.TabIndex = 10;
+            // 
+            // lblTaxa
+            // 
+            this.lblTaxa.AutoSize = true;
+            this.lblTaxa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTaxa.Location = new System.Drawing.Point(38, 200);
+            this.lblTaxa.Name = "lblTaxa";
+            this.lblTaxa.Size = new System.Drawing.Size(0, 13);
+            this.lblTaxa.TabIndex = 9;
+            // 
             // txtCoinValueSecond
             // 
             this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 31F, System.Drawing.FontStyle.Italic);
-            this.txtCoinValueSecond.Location = new System.Drawing.Point(94, 151);
+            this.txtCoinValueSecond.Location = new System.Drawing.Point(93, 102);
             this.txtCoinValueSecond.Name = "txtCoinValueSecond";
             this.txtCoinValueSecond.Size = new System.Drawing.Size(369, 51);
             this.txtCoinValueSecond.TabIndex = 8;
@@ -456,7 +498,7 @@
             // 
             this.lblSecondCurrencySymbols.AutoSize = true;
             this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(23, 152);
+            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(22, 103);
             this.lblSecondCurrencySymbols.Name = "lblSecondCurrencySymbols";
             this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(48, 49);
             this.lblSecondCurrencySymbols.TabIndex = 7;
@@ -467,7 +509,7 @@
             // 
             this.lblFirstCurrencySymbols.AutoSize = true;
             this.lblFirstCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(22, 55);
+            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(21, 20);
             this.lblFirstCurrencySymbols.Name = "lblFirstCurrencySymbols";
             this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(52, 34);
             this.lblFirstCurrencySymbols.TabIndex = 6;
@@ -483,10 +525,11 @@
             this.cboFirstCoin.FormattingEnabled = true;
             this.cboFirstCoin.Items.AddRange(new object[] {
             "BRL",
-            "USD"});
-            this.cboFirstCoin.Location = new System.Drawing.Point(33, 210);
+            "USD",
+            "EUR"});
+            this.cboFirstCoin.Location = new System.Drawing.Point(32, 161);
             this.cboFirstCoin.Name = "cboFirstCoin";
-            this.cboFirstCoin.Size = new System.Drawing.Size(215, 26);
+            this.cboFirstCoin.Size = new System.Drawing.Size(430, 26);
             this.cboFirstCoin.TabIndex = 5;
             this.cboFirstCoin.TextChanged += new System.EventHandler(this.cboFirstCoin_TextChanged);
             // 
@@ -499,10 +542,11 @@
             this.cboSecondCoin.FormattingEnabled = true;
             this.cboSecondCoin.Items.AddRange(new object[] {
             "BRL",
-            "USD"});
-            this.cboSecondCoin.Location = new System.Drawing.Point(33, 98);
+            "USD",
+            "EUR"});
+            this.cboSecondCoin.Location = new System.Drawing.Point(32, 63);
             this.cboSecondCoin.Name = "cboSecondCoin";
-            this.cboSecondCoin.Size = new System.Drawing.Size(215, 26);
+            this.cboSecondCoin.Size = new System.Drawing.Size(430, 26);
             this.cboSecondCoin.TabIndex = 4;
             this.cboSecondCoin.TextChanged += new System.EventHandler(this.cboSecondCoin_TextChanged);
             // 
@@ -511,7 +555,7 @@
             this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
             this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueFirst.Location = new System.Drawing.Point(80, 55);
+            this.txtCoinValueFirst.Location = new System.Drawing.Point(78, 21);
             this.txtCoinValueFirst.Name = "txtCoinValueFirst";
             this.txtCoinValueFirst.Size = new System.Drawing.Size(383, 34);
             this.txtCoinValueFirst.TabIndex = 1;
@@ -525,23 +569,174 @@
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
             // 
-            // lblTaxa
+            // btnCoinSeven
             // 
-            this.lblTaxa.AutoSize = true;
-            this.lblTaxa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTaxa.Location = new System.Drawing.Point(39, 262);
-            this.lblTaxa.Name = "lblTaxa";
-            this.lblTaxa.Size = new System.Drawing.Size(0, 13);
-            this.lblTaxa.TabIndex = 9;
+            this.btnCoinSeven.BackColor = System.Drawing.Color.Transparent;
+            this.btnCoinSeven.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinSeven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinSeven.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinSeven.Location = new System.Drawing.Point(28, 247);
+            this.btnCoinSeven.Name = "btnCoinSeven";
+            this.btnCoinSeven.Size = new System.Drawing.Size(136, 47);
+            this.btnCoinSeven.TabIndex = 11;
+            this.btnCoinSeven.Text = "7";
+            this.btnCoinSeven.UseVisualStyleBackColor = false;
+            this.btnCoinSeven.Click += new System.EventHandler(this.btnCoinSeven_Click);
             // 
-            // lblLastRateUpdate
+            // btnCoinEight
             // 
-            this.lblLastRateUpdate.AutoSize = true;
-            this.lblLastRateUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblLastRateUpdate.Location = new System.Drawing.Point(39, 285);
-            this.lblLastRateUpdate.Name = "lblLastRateUpdate";
-            this.lblLastRateUpdate.Size = new System.Drawing.Size(0, 13);
-            this.lblLastRateUpdate.TabIndex = 10;
+            this.btnCoinEight.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinEight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinEight.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinEight.Location = new System.Drawing.Point(170, 247);
+            this.btnCoinEight.Name = "btnCoinEight";
+            this.btnCoinEight.Size = new System.Drawing.Size(144, 47);
+            this.btnCoinEight.TabIndex = 12;
+            this.btnCoinEight.Text = "8";
+            this.btnCoinEight.UseVisualStyleBackColor = true;
+            this.btnCoinEight.Click += new System.EventHandler(this.btnCoinEight_Click);
+            // 
+            // btnCoinNine
+            // 
+            this.btnCoinNine.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinNine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinNine.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinNine.Location = new System.Drawing.Point(320, 247);
+            this.btnCoinNine.Name = "btnCoinNine";
+            this.btnCoinNine.Size = new System.Drawing.Size(142, 47);
+            this.btnCoinNine.TabIndex = 13;
+            this.btnCoinNine.Text = "9";
+            this.btnCoinNine.UseVisualStyleBackColor = true;
+            this.btnCoinNine.Click += new System.EventHandler(this.btnCoinNine_Click);
+            // 
+            // btnCoinFour
+            // 
+            this.btnCoinFour.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinFour.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinFour.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinFour.Location = new System.Drawing.Point(28, 300);
+            this.btnCoinFour.Name = "btnCoinFour";
+            this.btnCoinFour.Size = new System.Drawing.Size(136, 45);
+            this.btnCoinFour.TabIndex = 14;
+            this.btnCoinFour.Text = "4";
+            this.btnCoinFour.UseVisualStyleBackColor = true;
+            this.btnCoinFour.Click += new System.EventHandler(this.btnCoinFour_Click);
+            // 
+            // btnCoinFive
+            // 
+            this.btnCoinFive.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinFive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinFive.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinFive.Location = new System.Drawing.Point(170, 300);
+            this.btnCoinFive.Name = "btnCoinFive";
+            this.btnCoinFive.Size = new System.Drawing.Size(144, 45);
+            this.btnCoinFive.TabIndex = 15;
+            this.btnCoinFive.Text = "5";
+            this.btnCoinFive.UseVisualStyleBackColor = true;
+            this.btnCoinFive.Click += new System.EventHandler(this.btnCoinFive_Click);
+            // 
+            // btnCoinOne
+            // 
+            this.btnCoinOne.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinOne.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinOne.Location = new System.Drawing.Point(28, 351);
+            this.btnCoinOne.Name = "btnCoinOne";
+            this.btnCoinOne.Size = new System.Drawing.Size(136, 41);
+            this.btnCoinOne.TabIndex = 16;
+            this.btnCoinOne.Text = "1";
+            this.btnCoinOne.UseVisualStyleBackColor = true;
+            this.btnCoinOne.Click += new System.EventHandler(this.btnCoinOne_Click);
+            // 
+            // btnCoinSix
+            // 
+            this.btnCoinSix.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinSix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinSix.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinSix.Location = new System.Drawing.Point(320, 300);
+            this.btnCoinSix.Name = "btnCoinSix";
+            this.btnCoinSix.Size = new System.Drawing.Size(142, 45);
+            this.btnCoinSix.TabIndex = 17;
+            this.btnCoinSix.Text = "6";
+            this.btnCoinSix.UseVisualStyleBackColor = true;
+            this.btnCoinSix.Click += new System.EventHandler(this.btnCoinSix_Click);
+            // 
+            // btnCoinTwo
+            // 
+            this.btnCoinTwo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinTwo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinTwo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinTwo.Location = new System.Drawing.Point(170, 351);
+            this.btnCoinTwo.Name = "btnCoinTwo";
+            this.btnCoinTwo.Size = new System.Drawing.Size(144, 41);
+            this.btnCoinTwo.TabIndex = 18;
+            this.btnCoinTwo.Text = "2";
+            this.btnCoinTwo.UseVisualStyleBackColor = true;
+            this.btnCoinTwo.Click += new System.EventHandler(this.btnCoinTwo_Click);
+            // 
+            // btnCoinThree
+            // 
+            this.btnCoinThree.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinThree.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinThree.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinThree.Location = new System.Drawing.Point(320, 351);
+            this.btnCoinThree.Name = "btnCoinThree";
+            this.btnCoinThree.Size = new System.Drawing.Size(142, 41);
+            this.btnCoinThree.TabIndex = 19;
+            this.btnCoinThree.Text = "3";
+            this.btnCoinThree.UseVisualStyleBackColor = true;
+            this.btnCoinThree.Click += new System.EventHandler(this.btnCoinThree_Click);
+            // 
+            // btnCoinComma
+            // 
+            this.btnCoinComma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinComma.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinComma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinComma.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinComma.Location = new System.Drawing.Point(320, 398);
+            this.btnCoinComma.Name = "btnCoinComma";
+            this.btnCoinComma.Size = new System.Drawing.Size(142, 50);
+            this.btnCoinComma.TabIndex = 21;
+            this.btnCoinComma.Text = ",";
+            this.btnCoinComma.UseVisualStyleBackColor = true;
+            this.btnCoinComma.Click += new System.EventHandler(this.btnCoinComma_Click);
+            // 
+            // btnCoinZero
+            // 
+            this.btnCoinZero.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinZero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinZero.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinZero.Location = new System.Drawing.Point(170, 398);
+            this.btnCoinZero.Name = "btnCoinZero";
+            this.btnCoinZero.Size = new System.Drawing.Size(144, 50);
+            this.btnCoinZero.TabIndex = 20;
+            this.btnCoinZero.Text = "0";
+            this.btnCoinZero.UseVisualStyleBackColor = true;
+            this.btnCoinZero.Click += new System.EventHandler(this.btnCoinZero_Click);
+            // 
+            // btnCoinCE
+            // 
+            this.btnCoinCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinCE.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinCE.Location = new System.Drawing.Point(320, 200);
+            this.btnCoinCE.Name = "btnCoinCE";
+            this.btnCoinCE.Size = new System.Drawing.Size(142, 41);
+            this.btnCoinCE.TabIndex = 22;
+            this.btnCoinCE.Text = "CE";
+            this.btnCoinCE.UseVisualStyleBackColor = true;
+            this.btnCoinCE.Click += new System.EventHandler(this.btnCoinCE_Click);
             // 
             // frmCalc
             // 
@@ -568,27 +763,27 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtValue;
-        private System.Windows.Forms.Button btnSeven;
-        private System.Windows.Forms.Button btnEight;
-        private System.Windows.Forms.Button btnNine;
-        private System.Windows.Forms.Button btnFour;
-        private System.Windows.Forms.Button btnFive;
-        private System.Windows.Forms.Button btnOne;
-        private System.Windows.Forms.Button btnSix;
-        private System.Windows.Forms.Button btnTwo;
-        private System.Windows.Forms.Button btnThree;
-        private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button btnComa;
-        private System.Windows.Forms.Button btnSum;
-        private System.Windows.Forms.Button btnSubtraction;
-        private System.Windows.Forms.Button btnMultiplication;
-        private System.Windows.Forms.Button btnDivision;
-        private System.Windows.Forms.Button btnC;
-        private System.Windows.Forms.Button btnCE;
-        private System.Windows.Forms.Button btnEqual;
+        private System.Windows.Forms.Button btnCalcSeven;
+        private System.Windows.Forms.Button btnCalcEight;
+        private System.Windows.Forms.Button btnCalcNine;
+        private System.Windows.Forms.Button btnCalcFour;
+        private System.Windows.Forms.Button btnCalcFive;
+        private System.Windows.Forms.Button btnCalcOne;
+        private System.Windows.Forms.Button btnCalcSix;
+        private System.Windows.Forms.Button btnCalcTwo;
+        private System.Windows.Forms.Button btnCalcThree;
+        private System.Windows.Forms.Button btnCalcZero;
+        private System.Windows.Forms.Button btnCalcComa;
+        private System.Windows.Forms.Button btnCalcSum;
+        private System.Windows.Forms.Button btnCalcSubtraction;
+        private System.Windows.Forms.Button btnCalcMultiplication;
+        private System.Windows.Forms.Button btnCalcDivision;
+        private System.Windows.Forms.Button btnCalcC;
+        private System.Windows.Forms.Button btnCalcCE;
+        private System.Windows.Forms.Button btnCalcEqual;
         private System.Windows.Forms.Label lblPreviousValue;
         private System.Windows.Forms.Panel panelBorderForm;
-        private System.Windows.Forms.Button btnNegative;
+        private System.Windows.Forms.Button btnCalcNegative;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage Calculadora;
         private System.Windows.Forms.TabPage tpgCoin;
@@ -602,6 +797,18 @@
         private System.Windows.Forms.Label txtCoinValueSecond;
         private System.Windows.Forms.Label lblTaxa;
         private System.Windows.Forms.Label lblLastRateUpdate;
+        private System.Windows.Forms.Button btnCoinCE;
+        private System.Windows.Forms.Button btnCoinSeven;
+        private System.Windows.Forms.Button btnCoinEight;
+        private System.Windows.Forms.Button btnCoinNine;
+        private System.Windows.Forms.Button btnCoinFour;
+        private System.Windows.Forms.Button btnCoinFive;
+        private System.Windows.Forms.Button btnCoinOne;
+        private System.Windows.Forms.Button btnCoinSix;
+        private System.Windows.Forms.Button btnCoinTwo;
+        private System.Windows.Forms.Button btnCoinThree;
+        private System.Windows.Forms.Button btnCoinComma;
+        private System.Windows.Forms.Button btnCoinZero;
     }
 }
 
