@@ -49,20 +49,11 @@
             this.btnCalcEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
             this.panelBorderForm = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnCalcNegative = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
             this.tpgCoin = new System.Windows.Forms.TabPage();
-            this.lblLastRateUpdate = new System.Windows.Forms.Label();
-            this.lblTaxa = new System.Windows.Forms.Label();
-            this.txtCoinValueSecond = new System.Windows.Forms.Label();
-            this.lblSecondCurrencySymbols = new System.Windows.Forms.Label();
-            this.lblFirstCurrencySymbols = new System.Windows.Forms.Label();
-            this.cboFirstCoin = new System.Windows.Forms.ComboBox();
-            this.cboSecondCoin = new System.Windows.Forms.ComboBox();
-            this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCoinCE = new System.Windows.Forms.Button();
             this.btnCoinSeven = new System.Windows.Forms.Button();
             this.btnCoinEight = new System.Windows.Forms.Button();
             this.btnCoinNine = new System.Windows.Forms.Button();
@@ -74,12 +65,25 @@
             this.btnCoinThree = new System.Windows.Forms.Button();
             this.btnCoinComma = new System.Windows.Forms.Button();
             this.btnCoinZero = new System.Windows.Forms.Button();
-            this.btnCoinCE = new System.Windows.Forms.Button();
+            this.lblLastRateUpdate = new System.Windows.Forms.Label();
+            this.lblTaxa = new System.Windows.Forms.Label();
+            this.txtCoinValueSecond = new System.Windows.Forms.Label();
+            this.lblSecondCurrencySymbols = new System.Windows.Forms.Label();
+            this.lblFirstCurrencySymbols = new System.Windows.Forms.Label();
+            this.cboFirstCoin = new System.Windows.Forms.ComboBox();
+            this.cboSecondCoin = new System.Windows.Forms.ComboBox();
+            this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblGitHub = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.panelBorderForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl.SuspendLayout();
             this.Calculadora.SuspendLayout();
             this.tpgCoin.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // txtValue
@@ -368,18 +372,6 @@
             this.panelBorderForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseMove);
             this.panelBorderForm.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseUp);
             // 
-            // btnExit
-            // 
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Image = global::Calculadora.Properties.Resources.button_exit;
-            this.btnExit.Location = new System.Drawing.Point(434, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(58, 38);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnExit.TabIndex = 0;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnCalcNegative
             // 
             this.btnCalcNegative.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
@@ -466,108 +458,19 @@
             this.tpgCoin.TabIndex = 1;
             this.tpgCoin.Text = "Moeda";
             // 
-            // lblLastRateUpdate
+            // btnCoinCE
             // 
-            this.lblLastRateUpdate.AutoSize = true;
-            this.lblLastRateUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblLastRateUpdate.Location = new System.Drawing.Point(38, 223);
-            this.lblLastRateUpdate.Name = "lblLastRateUpdate";
-            this.lblLastRateUpdate.Size = new System.Drawing.Size(0, 13);
-            this.lblLastRateUpdate.TabIndex = 10;
-            // 
-            // lblTaxa
-            // 
-            this.lblTaxa.AutoSize = true;
-            this.lblTaxa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTaxa.Location = new System.Drawing.Point(38, 200);
-            this.lblTaxa.Name = "lblTaxa";
-            this.lblTaxa.Size = new System.Drawing.Size(0, 13);
-            this.lblTaxa.TabIndex = 9;
-            // 
-            // txtCoinValueSecond
-            // 
-            this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 31F, System.Drawing.FontStyle.Italic);
-            this.txtCoinValueSecond.Location = new System.Drawing.Point(93, 102);
-            this.txtCoinValueSecond.Name = "txtCoinValueSecond";
-            this.txtCoinValueSecond.Size = new System.Drawing.Size(369, 51);
-            this.txtCoinValueSecond.TabIndex = 8;
-            this.txtCoinValueSecond.Text = "0";
-            this.txtCoinValueSecond.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSecondCurrencySymbols
-            // 
-            this.lblSecondCurrencySymbols.AutoSize = true;
-            this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(22, 103);
-            this.lblSecondCurrencySymbols.Name = "lblSecondCurrencySymbols";
-            this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(48, 49);
-            this.lblSecondCurrencySymbols.TabIndex = 7;
-            this.lblSecondCurrencySymbols.Text = "$";
-            this.lblSecondCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblFirstCurrencySymbols
-            // 
-            this.lblFirstCurrencySymbols.AutoSize = true;
-            this.lblFirstCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(21, 20);
-            this.lblFirstCurrencySymbols.Name = "lblFirstCurrencySymbols";
-            this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(52, 34);
-            this.lblFirstCurrencySymbols.TabIndex = 6;
-            this.lblFirstCurrencySymbols.Text = "R$";
-            this.lblFirstCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // cboFirstCoin
-            // 
-            this.cboFirstCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.cboFirstCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFirstCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboFirstCoin.Font = new System.Drawing.Font("Verdana", 12F);
-            this.cboFirstCoin.FormattingEnabled = true;
-            this.cboFirstCoin.Items.AddRange(new object[] {
-            "BRL",
-            "USD",
-            "EUR"});
-            this.cboFirstCoin.Location = new System.Drawing.Point(32, 161);
-            this.cboFirstCoin.Name = "cboFirstCoin";
-            this.cboFirstCoin.Size = new System.Drawing.Size(430, 26);
-            this.cboFirstCoin.TabIndex = 5;
-            this.cboFirstCoin.TextChanged += new System.EventHandler(this.cboFirstCoin_TextChanged);
-            // 
-            // cboSecondCoin
-            // 
-            this.cboSecondCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.cboSecondCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSecondCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboSecondCoin.Font = new System.Drawing.Font("Verdana", 12F);
-            this.cboSecondCoin.FormattingEnabled = true;
-            this.cboSecondCoin.Items.AddRange(new object[] {
-            "BRL",
-            "USD",
-            "EUR"});
-            this.cboSecondCoin.Location = new System.Drawing.Point(32, 63);
-            this.cboSecondCoin.Name = "cboSecondCoin";
-            this.cboSecondCoin.Size = new System.Drawing.Size(430, 26);
-            this.cboSecondCoin.TabIndex = 4;
-            this.cboSecondCoin.TextChanged += new System.EventHandler(this.cboSecondCoin_TextChanged);
-            // 
-            // txtCoinValueFirst
-            // 
-            this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
-            this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
-            this.txtCoinValueFirst.Location = new System.Drawing.Point(78, 21);
-            this.txtCoinValueFirst.Name = "txtCoinValueFirst";
-            this.txtCoinValueFirst.Size = new System.Drawing.Size(383, 34);
-            this.txtCoinValueFirst.TabIndex = 1;
-            this.txtCoinValueFirst.TextChanged += new System.EventHandler(this.txtCoinValueFirst_TextChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(233)))), ((int)(((byte)(218)))));
-            this.panel1.Location = new System.Drawing.Point(0, 523);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(492, 24);
-            this.panel1.TabIndex = 20;
+            this.btnCoinCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
+            this.btnCoinCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
+            this.btnCoinCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinCE.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoinCE.Location = new System.Drawing.Point(320, 200);
+            this.btnCoinCE.Name = "btnCoinCE";
+            this.btnCoinCE.Size = new System.Drawing.Size(142, 41);
+            this.btnCoinCE.TabIndex = 22;
+            this.btnCoinCE.Text = "CE";
+            this.btnCoinCE.UseVisualStyleBackColor = true;
+            this.btnCoinCE.Click += new System.EventHandler(this.btnCoinCE_Click);
             // 
             // btnCoinSeven
             // 
@@ -724,19 +627,142 @@
             this.btnCoinZero.UseVisualStyleBackColor = true;
             this.btnCoinZero.Click += new System.EventHandler(this.btnCoinZero_Click);
             // 
-            // btnCoinCE
+            // lblLastRateUpdate
             // 
-            this.btnCoinCE.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(180)))));
-            this.btnCoinCE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(205)))), ((int)(((byte)(214)))));
-            this.btnCoinCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCoinCE.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCoinCE.Location = new System.Drawing.Point(320, 200);
-            this.btnCoinCE.Name = "btnCoinCE";
-            this.btnCoinCE.Size = new System.Drawing.Size(142, 41);
-            this.btnCoinCE.TabIndex = 22;
-            this.btnCoinCE.Text = "CE";
-            this.btnCoinCE.UseVisualStyleBackColor = true;
-            this.btnCoinCE.Click += new System.EventHandler(this.btnCoinCE_Click);
+            this.lblLastRateUpdate.AutoSize = true;
+            this.lblLastRateUpdate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblLastRateUpdate.Location = new System.Drawing.Point(38, 223);
+            this.lblLastRateUpdate.Name = "lblLastRateUpdate";
+            this.lblLastRateUpdate.Size = new System.Drawing.Size(0, 13);
+            this.lblLastRateUpdate.TabIndex = 10;
+            // 
+            // lblTaxa
+            // 
+            this.lblTaxa.AutoSize = true;
+            this.lblTaxa.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTaxa.Location = new System.Drawing.Point(38, 200);
+            this.lblTaxa.Name = "lblTaxa";
+            this.lblTaxa.Size = new System.Drawing.Size(0, 13);
+            this.lblTaxa.TabIndex = 9;
+            // 
+            // txtCoinValueSecond
+            // 
+            this.txtCoinValueSecond.Font = new System.Drawing.Font("Verdana", 31F, System.Drawing.FontStyle.Italic);
+            this.txtCoinValueSecond.Location = new System.Drawing.Point(93, 102);
+            this.txtCoinValueSecond.Name = "txtCoinValueSecond";
+            this.txtCoinValueSecond.Size = new System.Drawing.Size(369, 51);
+            this.txtCoinValueSecond.TabIndex = 8;
+            this.txtCoinValueSecond.Text = "0";
+            this.txtCoinValueSecond.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSecondCurrencySymbols
+            // 
+            this.lblSecondCurrencySymbols.AutoSize = true;
+            this.lblSecondCurrencySymbols.Font = new System.Drawing.Font("Verdana", 30.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondCurrencySymbols.Location = new System.Drawing.Point(22, 103);
+            this.lblSecondCurrencySymbols.Name = "lblSecondCurrencySymbols";
+            this.lblSecondCurrencySymbols.Size = new System.Drawing.Size(48, 49);
+            this.lblSecondCurrencySymbols.TabIndex = 7;
+            this.lblSecondCurrencySymbols.Text = "$";
+            this.lblSecondCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblFirstCurrencySymbols
+            // 
+            this.lblFirstCurrencySymbols.AutoSize = true;
+            this.lblFirstCurrencySymbols.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.lblFirstCurrencySymbols.Location = new System.Drawing.Point(21, 20);
+            this.lblFirstCurrencySymbols.Name = "lblFirstCurrencySymbols";
+            this.lblFirstCurrencySymbols.Size = new System.Drawing.Size(52, 34);
+            this.lblFirstCurrencySymbols.TabIndex = 6;
+            this.lblFirstCurrencySymbols.Text = "R$";
+            this.lblFirstCurrencySymbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // cboFirstCoin
+            // 
+            this.cboFirstCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.cboFirstCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFirstCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboFirstCoin.Font = new System.Drawing.Font("Verdana", 12F);
+            this.cboFirstCoin.FormattingEnabled = true;
+            this.cboFirstCoin.Items.AddRange(new object[] {
+            "BRL",
+            "USD",
+            "EUR"});
+            this.cboFirstCoin.Location = new System.Drawing.Point(32, 161);
+            this.cboFirstCoin.Name = "cboFirstCoin";
+            this.cboFirstCoin.Size = new System.Drawing.Size(430, 26);
+            this.cboFirstCoin.TabIndex = 5;
+            this.cboFirstCoin.TextChanged += new System.EventHandler(this.cboFirstCoin_TextChanged);
+            // 
+            // cboSecondCoin
+            // 
+            this.cboSecondCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.cboSecondCoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSecondCoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboSecondCoin.Font = new System.Drawing.Font("Verdana", 12F);
+            this.cboSecondCoin.FormattingEnabled = true;
+            this.cboSecondCoin.Items.AddRange(new object[] {
+            "BRL",
+            "USD",
+            "EUR"});
+            this.cboSecondCoin.Location = new System.Drawing.Point(32, 63);
+            this.cboSecondCoin.Name = "cboSecondCoin";
+            this.cboSecondCoin.Size = new System.Drawing.Size(430, 26);
+            this.cboSecondCoin.TabIndex = 4;
+            this.cboSecondCoin.TextChanged += new System.EventHandler(this.cboSecondCoin_TextChanged);
+            // 
+            // txtCoinValueFirst
+            // 
+            this.txtCoinValueFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(191)))), ((int)(((byte)(207)))));
+            this.txtCoinValueFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCoinValueFirst.Font = new System.Drawing.Font("Verdana", 20.75F);
+            this.txtCoinValueFirst.Location = new System.Drawing.Point(78, 21);
+            this.txtCoinValueFirst.Name = "txtCoinValueFirst";
+            this.txtCoinValueFirst.Size = new System.Drawing.Size(383, 34);
+            this.txtCoinValueFirst.TabIndex = 1;
+            this.txtCoinValueFirst.TextChanged += new System.EventHandler(this.txtCoinValueFirst_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(233)))), ((int)(((byte)(218)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblGitHub);
+            this.panel1.Location = new System.Drawing.Point(0, 523);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(492, 24);
+            this.panel1.TabIndex = 20;
+            // 
+            // lblGitHub
+            // 
+            this.lblGitHub.AutoSize = true;
+            this.lblGitHub.Location = new System.Drawing.Point(32, 6);
+            this.lblGitHub.Name = "lblGitHub";
+            this.lblGitHub.Size = new System.Drawing.Size(87, 13);
+            this.lblGitHub.TabIndex = 0;
+            this.lblGitHub.TabStop = true;
+            this.lblGitHub.Text = "github/thalisonss";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Calculadora.Properties.Resources.logotipo_do_github;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Image = global::Calculadora.Properties.Resources.button_exit;
+            this.btnExit.Location = new System.Drawing.Point(434, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(58, 38);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmCalc
             // 
@@ -750,12 +776,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalc";
             this.panelBorderForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.Calculadora.ResumeLayout(false);
             this.Calculadora.PerformLayout();
             this.tpgCoin.ResumeLayout(false);
             this.tpgCoin.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -809,6 +838,8 @@
         private System.Windows.Forms.Button btnCoinThree;
         private System.Windows.Forms.Button btnCoinComma;
         private System.Windows.Forms.Button btnCoinZero;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel lblGitHub;
     }
 }
 

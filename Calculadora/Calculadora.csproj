@@ -95,5 +95,8 @@
   <ItemGroup>
     <None Include="Assets\images\button_exit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\images\logotipo-do-github.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
