@@ -49,6 +49,7 @@
             this.btnCalcEqual = new System.Windows.Forms.Button();
             this.lblPreviousValue = new System.Windows.Forms.Label();
             this.panelBorderForm = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnCalcNegative = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.Calculadora = new System.Windows.Forms.TabPage();
@@ -74,16 +75,15 @@
             this.cboSecondCoin = new System.Windows.Forms.ComboBox();
             this.txtCoinValueFirst = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblGitHub = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.PictureBox();
+            this.lblGitHub = new System.Windows.Forms.LinkLabel();
             this.panelBorderForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.tabControl.SuspendLayout();
             this.Calculadora.SuspendLayout();
             this.tpgCoin.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
             // 
             // txtValue
@@ -371,6 +371,18 @@
             this.panelBorderForm.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseDown);
             this.panelBorderForm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseMove);
             this.panelBorderForm.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBorderForm_MouseUp);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Image = global::Calculadora.Properties.Resources.button_exit;
+            this.btnExit.Location = new System.Drawing.Point(434, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(58, 38);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnCalcNegative
             // 
@@ -732,16 +744,6 @@
             this.panel1.Size = new System.Drawing.Size(492, 24);
             this.panel1.TabIndex = 20;
             // 
-            // lblGitHub
-            // 
-            this.lblGitHub.AutoSize = true;
-            this.lblGitHub.Location = new System.Drawing.Point(32, 6);
-            this.lblGitHub.Name = "lblGitHub";
-            this.lblGitHub.Size = new System.Drawing.Size(87, 13);
-            this.lblGitHub.TabIndex = 0;
-            this.lblGitHub.TabStop = true;
-            this.lblGitHub.Text = "github/thalisonss";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Calculadora.Properties.Resources.logotipo_do_github;
@@ -752,17 +754,16 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btnExit
+            // lblGitHub
             // 
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Image = global::Calculadora.Properties.Resources.button_exit;
-            this.btnExit.Location = new System.Drawing.Point(434, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(58, 38);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnExit.TabIndex = 0;
-            this.btnExit.TabStop = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.lblGitHub.AutoSize = true;
+            this.lblGitHub.Location = new System.Drawing.Point(32, 6);
+            this.lblGitHub.Name = "lblGitHub";
+            this.lblGitHub.Size = new System.Drawing.Size(87, 13);
+            this.lblGitHub.TabIndex = 0;
+            this.lblGitHub.TabStop = true;
+            this.lblGitHub.Text = "github/thalisonss";
+            this.lblGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblGitHub_LinkClicked);
             // 
             // frmCalc
             // 
@@ -776,6 +777,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalc";
             this.panelBorderForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.Calculadora.ResumeLayout(false);
             this.Calculadora.PerformLayout();
@@ -784,7 +786,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.ResumeLayout(false);
 
         }
