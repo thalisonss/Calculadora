@@ -47,6 +47,11 @@ namespace Calculadora
 
         #region | Controls Events |
 
+        private void lblGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/thalisonss");
+        }
+
         #region | Controls event - Basic Calculator |
 
         //Mover form com mouse
@@ -629,10 +634,5 @@ namespace Calculadora
         #endregion
 
         #endregion
-
-        private void lblGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/thalisonss");
-        }
     }
 }
