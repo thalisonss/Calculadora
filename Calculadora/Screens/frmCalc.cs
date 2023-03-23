@@ -217,6 +217,7 @@ namespace Calculadora
                 operation = "+";
                 firstValue = Convert.ToDecimal(txtValue.Text);
                 PreviousValue(firstValue);
+                txtValue.Text = string.Empty;
             }
             catch (Exception ex)
             {
@@ -231,6 +232,7 @@ namespace Calculadora
                 operation = "-";
                 firstValue = Convert.ToDecimal(txtValue.Text);
                 PreviousValue(firstValue);
+                txtValue.Text = string.Empty;
             }
             catch (Exception ex)
             {
@@ -245,6 +247,7 @@ namespace Calculadora
                 operation = "*";
                 firstValue = Convert.ToDecimal(txtValue.Text);
                 PreviousValue(firstValue);
+                txtValue.Text = string.Empty;
             }
             catch (Exception ex)
             {
@@ -259,6 +262,7 @@ namespace Calculadora
                 operation = "/";
                 firstValue = Convert.ToDecimal(txtValue.Text);
                 PreviousValue(firstValue);
+                txtValue.Text = string.Empty;
             }
             catch (Exception ex)
             {
@@ -576,24 +580,28 @@ namespace Calculadora
                     operation = "+";
                     firstValue = Convert.ToDecimal(txtValue.Text);
                     PreviousValue(firstValue);
+                    txtValue.Text = string.Empty;
                 }
                 if (e.KeyChar == '-')
                 {
                     operation = "-";
                     firstValue = Convert.ToDecimal(txtValue.Text);
                     PreviousValue(firstValue);
+                    txtValue.Text = string.Empty;
                 }
                 if (e.KeyChar == '/')
                 {
                     operation = "/";
                     firstValue = Convert.ToDecimal(txtValue.Text);
                     PreviousValue(firstValue);
+                    txtValue.Text = string.Empty;
                 }
                 if (e.KeyChar == '*')
                 {
                     operation = "*";
                     firstValue = Convert.ToDecimal(txtValue.Text);
                     PreviousValue(firstValue);
+                    txtValue.Text = string.Empty;
                 }
                 if (e.KeyChar == 13)
                 {
